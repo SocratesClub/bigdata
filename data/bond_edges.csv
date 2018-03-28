@@ -1,0 +1,21 @@
+src,dst,relation
+Wai Lin,James Bond,friend
+M,James Bond,worksfor
+Inga Bergstorm,James Bond,friend
+Elliot Carver,James Bond,killed_by
+Gotz Otto,James Bond,killed_by
+James Bond,M,managed_by
+Q,M,managed_by
+Moneypenny,M,managed_by
+Q,Moneypenny,colleague
+M,Moneypenny,worksfor
+M,Q,worksfor
+Moneypenny,Q,colleague
+James Bond,Wai Lin,friend
+James Bond,Inga Bergstorm,friend
+Henry Gupta,Elliot Carver,killed_by
+Paris Carver,Elliot Carver,killed_by
+Paris Carver,Elliot Carver,engagedto
+Elliot Carver,Paris Carver,engagedto
+Elliot Carver,Gotz Otto,worksfor
+Elliot Carver,Henry Gupta,worksfor
