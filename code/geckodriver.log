@@ -1,0 +1,20 @@
+1523537650045	geckodriver	INFO	geckodriver 0.20.1
+1523537650057	geckodriver	INFO	Listening on 127.0.0.1:62864
+1523537651048	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/8b/hhnbt0nd4zsg2qhxc28q23w80000gn/T/rust_mozprofile.XXZMe4IHm2Vb"
+1523537651704	Marionette	INFO	Enabled via --marionette
+2018-04-12 20:54:12.588 plugin-container[41971:2186177] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xad53, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1523537652898	Marionette	INFO	Listening on port 62875
+1523537652918	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-04-12 20:54:13.470 plugin-container[41973:2186291] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa53f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1523546626495	geckodriver	INFO	geckodriver 0.20.1
+1523546626500	geckodriver	INFO	Listening on 127.0.0.1:49670
+1523546627507	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/8b/hhnbt0nd4zsg2qhxc28q23w80000gn/T/rust_mozprofile.cT0fcsvTJa2c"
+1523546627856	Marionette	INFO	Enabled via --marionette
+2018-04-12 23:23:48.514 plugin-container[42678:2264776] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xac4f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1523546628766	Marionette	INFO	Listening on port 49681
+1523546628844	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-04-12 23:23:49.441 plugin-container[42681:2264890] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa953, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
