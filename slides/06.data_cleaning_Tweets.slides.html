@@ -11993,10 +11993,12 @@ a.anchor-link {
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># https://stackoverflow.com/questions/519633/lazy-method-for-reading-big-file-in-python?lq=1</span>
 <span class="n">bigfile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;../bigdata/OWS/ows-raw.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
-<span class="n">chunkSize</span> <span class="o">=</span> <span class="mi">100000000</span>
+<span class="n">chunkSize</span> <span class="o">=</span> <span class="mi">10</span><span class="o">**</span><span class="mi">8</span>
 <span class="n">chunk</span> <span class="o">=</span> <span class="n">bigfile</span><span class="o">.</span><span class="n">readlines</span><span class="p">(</span><span class="n">chunkSize</span><span class="p">)</span>
 <span class="k">while</span> <span class="n">chunk</span><span class="p">:</span>
-    <span class="n">do</span> <span class="n">sth</span><span class="o">.</span>
+    <span class="c1">#do sth.</span>
+    <span class="n">lines</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">((</span><span class="n">line</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\x00</span><span class="s1">&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">chunk</span><span class="p">),</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">quotechar</span><span class="o">=</span><span class="s1">&#39;&quot;&#39;</span><span class="p">)</span>
+    
     <span class="n">chunk</span> <span class="o">=</span> <span class="n">bigfile</span><span class="o">.</span><span class="n">readlines</span><span class="p">(</span><span class="n">chunkSize</span><span class="p">)</span> <span class="c1"># read another chunk</span>
     
 </pre></div>
@@ -12005,6 +12007,22 @@ a.anchor-link {
 </div>
 </div>
 
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#23383;&#33410;&#65288;Byte-/bait/&#65289;">&#23383;&#33410;&#65288;Byte /bait/&#65289;<a class="anchor-link" href="#&#23383;&#33410;&#65288;Byte-/bait/&#65289;">&#182;</a></h1><p>计算机信息技术用于计量存储容量的一种计量单位，通常情况下一字节等于有八位， [1]  也表示一些计算机编程语言中的数据类型和语言字符。</p>
+<ul>
+<li>1B（byte，字节）= 8 bit；</li>
+<li>1KB=1000B；1MB=1000KB=1000×1000B。其中1000=10^3。</li>
+<li>1KB（kilobyte，千字节）=1000B= 10^3 B；</li>
+<li>1MB（Megabyte，兆字节，百万字节，简称“兆”）=1000KB= 10^6 B；</li>
+<li>1GB（Gigabyte，吉字节，十亿字节，又称“千兆”）=1000MB= 10^9 B；</li>
+</ul>
+
+</div>
+</div>
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
@@ -12016,7 +12034,7 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[174]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;../data/ows_tweets_sample.txt&quot;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
@@ -12030,7 +12048,7 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 总行数</span>
@@ -12047,7 +12065,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[35]:</div>
+<div class="prompt output_prompt">Out[2]:</div>
 
 
 
@@ -12064,7 +12082,7 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 查看第一行</span>
@@ -12081,7 +12099,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[58]:</div>
+<div class="prompt output_prompt">Out[3]:</div>
 
 
 
@@ -12149,7 +12167,7 @@ split(...) method of builtins.str instance
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">varNames</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
@@ -12166,7 +12184,7 @@ split(...) method of builtins.str instance
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[10]:</div>
+<div class="prompt output_prompt">Out[4]:</div>
 
 
 
@@ -12196,7 +12214,7 @@ split(...) method of builtins.str instance
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">varNames</span><span class="p">)</span>
@@ -12212,7 +12230,7 @@ split(...) method of builtins.str instance
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[11]:</div>
+<div class="prompt output_prompt">Out[5]:</div>
 
 
 
@@ -12226,10 +12244,10 @@ split(...) method of builtins.str instance
 </div>
 </div>
 
-</div>
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lines</span><span class="p">[</span><span class="mi">1344</span><span class="p">]</span>
@@ -12245,7 +12263,7 @@ split(...) method of builtins.str instance
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[12]:</div>
+<div class="prompt output_prompt">Out[6]:</div>
 
 
 
@@ -12270,7 +12288,7 @@ split(...) method of builtins.str instance
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;../data/ows_tweets_sample_clean.txt&quot;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
@@ -12293,7 +12311,7 @@ split(...) method of builtins.str instance
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">blocks</span><span class="p">)</span>
@@ -12309,7 +12327,7 @@ split(...) method of builtins.str instance
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[20]:</div>
+<div class="prompt output_prompt">Out[8]:</div>
 
 
 
@@ -12326,7 +12344,7 @@ split(...) method of builtins.str instance
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">blocks</span><span class="p">[</span><span class="mi">1344</span><span class="p">]</span>
@@ -12342,13 +12360,13 @@ split(...) method of builtins.str instance
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[27]:</div>
+<div class="prompt output_prompt">Out[9]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;121818879105310720,&#34;RT @Min_Reyes: RT @The99Percenters: New video to go viral. From We Are Change\rhttp://t.co/6Ff718jk Listen to the guy begging... #ows #cdnpoli&#34;,http://a3.twimg.com/sticky/default_profile_images/default_profile_0_normal.png,2011-10-06,5,27,&#34;2011-10-06 05:27:38&#34;,N;,MiyazakiMegu,260948518,en,,0,&#34;&amp;lt;a href=&amp;quot;http://www.tweetdeck.com&amp;quot; rel=&amp;quot;nofollow&amp;quot;&amp;gt;TweetDeck&amp;lt;/a&amp;gt;&#34;&#39;</pre>
+<pre>&#39;121818879105310720,&#34;RT @Min_Reyes: RT @The99Percenters: New video to go viral. From We Are Change http://t.co/6Ff718jk Listen to the guy begging... #ows #cdnpoli&#34;,http://a3.twimg.com/sticky/default_profile_images/default_profile_0_normal.png,2011-10-06,5,27,&#34;2011-10-06 05:27:38&#34;,N;,MiyazakiMegu,260948518,en,,0,&#34;&amp;lt;a href=&amp;quot;http://www.tweetdeck.com&amp;quot; rel=&amp;quot;nofollow&amp;quot;&amp;gt;TweetDeck&amp;lt;/a&amp;gt;&#34; &#39;</pre>
 </div>
 
 </div>
@@ -12410,7 +12428,7 @@ split(...) method of builtins.str instance
 </div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[87]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
@@ -12462,7 +12480,7 @@ line = 49  length = 5
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[175]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;../data/ows_tweets_sample_clean4.txt&quot;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
@@ -12487,7 +12505,7 @@ line = 49  length = 5
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[176]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">blocks</span><span class="p">)</span>
@@ -12503,7 +12521,7 @@ line = 49  length = 5
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[176]:</div>
+<div class="prompt output_prompt">Out[12]:</div>
 
 
 
@@ -12528,11 +12546,11 @@ line = 49  length = 5
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 提示：你可能需要修改以下路径名</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;../data/ows_tweets_sample_clean.txt&quot;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;../data/ows_tweets_sample.txt&quot;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">chunk</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
 </pre></div>
 
@@ -12543,7 +12561,7 @@ line = 49  length = 5
 </div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">chunk</span><span class="p">)</span>
@@ -12559,13 +12577,13 @@ line = 49  length = 5
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[10]:</div>
+<div class="prompt output_prompt">Out[8]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>2628</pre>
+<pre>2753</pre>
 </div>
 
 </div>
@@ -12576,7 +12594,7 @@ line = 49  length = 5
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">chunk</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span>
@@ -12592,15 +12610,15 @@ line = 49  length = 5
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[11]:</div>
+<div class="prompt output_prompt">Out[18]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[&#39;&#34;Twitter ID&#34;,Text,&#34;Profile Image URL&#34;,Day,Hour,Minute,&#34;Created At&#34;,Geo,&#34;From User&#34;,&#34;From User ID&#34;,Language,&#34;To User&#34;,&#34;To User ID&#34;,Source \n&#39;,
- &#39;121813144174727168,&#34;RT @AnonKitsu: ALERT!!!!!!!!!!COPS ARE KETTLING PROTESTERS IN PARK W HELICOPTERS AND PADDYWAGONS!!!! #OCCUPYWALLSTREET #OWS #OCCUPYNY PLEASE RT !!HELP!!!!&#34;,http://a2.twimg.com/profile_images/1539375713/Twitter_normal.jpg,2011-10-06,5,4,&#34;2011-10-06 05:04:51&#34;,N;,Anonops_Cop,401240477,en,,0,&#34;&amp;lt;a href=&amp;quot;http://twitter.com/&amp;quot;&amp;gt;web&amp;lt;/a&amp;gt;&#34; \n&#39;,
- &#39;121813146137657344,&#34;@jamiekilstein @allisonkilkenny Interesting interview (never aired, wonder why??) by Fox with #ows protester http://t.co/Fte55Kh7&#34;,http://a2.twimg.com/profile_images/1574715503/Kate6_normal.jpg,2011-10-06,5,4,&#34;2011-10-06 05:04:51&#34;,N;,KittyHybrid,34532053,en,jamiekilstein,2149053,&#34;&amp;lt;a href=&amp;quot;http://twitter.com/&amp;quot;&amp;gt;web&amp;lt;/a&amp;gt;&#34; \n&#39;]</pre>
+<pre>[&#39;&#34;Twitter ID&#34;,Text,&#34;Profile Image URL&#34;,Day,Hour,Minute,&#34;Created At&#34;,Geo,&#34;From User&#34;,&#34;From User ID&#34;,Language,&#34;To User&#34;,&#34;To User ID&#34;,Source\n&#39;,
+ &#39;121813144174727168,&#34;RT @AnonKitsu: ALERT!!!!!!!!!!COPS ARE KETTLING PROTESTERS IN PARK W HELICOPTERS AND PADDYWAGONS!!!! #OCCUPYWALLSTREET #OWS #OCCUPYNY PLEASE RT !!HELP!!!!&#34;,http://a2.twimg.com/profile_images/1539375713/Twitter_normal.jpg,2011-10-06,5,4,&#34;2011-10-06 05:04:51&#34;,N;,Anonops_Cop,401240477,en,,0,&#34;&amp;lt;a href=&amp;quot;http://twitter.com/&amp;quot;&amp;gt;web&amp;lt;/a&amp;gt;&#34;\n&#39;,
+ &#39;121813146137657344,&#34;@jamiekilstein @allisonkilkenny Interesting interview (never aired, wonder why??) by Fox with #ows protester http://t.co/Fte55Kh7&#34;,http://a2.twimg.com/profile_images/1574715503/Kate6_normal.jpg,2011-10-06,5,4,&#34;2011-10-06 05:04:51&#34;,N;,KittyHybrid,34532053,en,jamiekilstein,2149053,&#34;&amp;lt;a href=&amp;quot;http://twitter.com/&amp;quot;&amp;gt;web&amp;lt;/a&amp;gt;&#34;\n&#39;]</pre>
 </div>
 
 </div>
@@ -12611,12 +12629,11 @@ line = 49  length = 5
 </div></div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
-<span class="n">lines_csv</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">chunk</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> \
-                   <span class="n">quotechar</span><span class="o">=</span><span class="s1">&#39;&quot;&#39;</span><span class="p">)</span> 
+<span class="n">lines_csv</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">chunk</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">quotechar</span><span class="o">=</span><span class="s1">&#39;&quot;&#39;</span><span class="p">)</span> 
 <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">lines_csv</span><span class="p">)))</span>
 <span class="c1"># next(lines_csv)</span>
 <span class="c1"># next(lines_csv)</span>
@@ -12647,12 +12664,11 @@ line = 49  length = 5
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;../data/ows_tweets_sample_clean.txt&quot;</span><span class="p">,</span>\
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;../data/ows_tweets_sample.txt&quot;</span><span class="p">,</span>
                  <span class="n">sep</span> <span class="o">=</span> <span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">quotechar</span><span class="o">=</span><span class="s1">&#39;&quot;&#39;</span><span class="p">)</span>
 <span class="n">df</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span>
 </pre></div>
@@ -12667,7 +12683,7 @@ line = 49  length = 5
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[13]:</div>
+<div class="prompt output_prompt">Out[22]:</div>
 
 
 
@@ -12758,7 +12774,7 @@ line = 49  length = 5
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
@@ -12774,7 +12790,7 @@ line = 49  length = 5
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[14]:</div>
+<div class="prompt output_prompt">Out[23]:</div>
 
 
 
@@ -12791,7 +12807,7 @@ line = 49  length = 5
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">Text</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -12807,7 +12823,7 @@ line = 49  length = 5
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[15]:</div>
+<div class="prompt output_prompt">Out[24]:</div>
 
 
 
@@ -12824,7 +12840,7 @@ line = 49  length = 5
 </div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;From User&#39;</span><span class="p">][:</span><span class="mi">10</span><span class="p">]</span>
@@ -12840,7 +12856,7 @@ line = 49  length = 5
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[16]:</div>
+<div class="prompt output_prompt">Out[25]:</div>
 
 
 
@@ -12877,7 +12893,7 @@ Name: From User, dtype: object</pre>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">defaultdict</span>
@@ -12893,7 +12909,7 @@ Name: From User, dtype: object</pre>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="n">data_dict</span><span class="o">.</span><span class="n">items</span><span class="p">())[:</span><span class="mi">5</span><span class="p">]</span>
@@ -12910,17 +12926,17 @@ Name: From User, dtype: object</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[18]:</div>
+<div class="prompt output_prompt">Out[27]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[(&#39;TexasCommie&#39;, 2),
- (&#39;TProlificJones&#39;, 1),
- (&#39;greenthumbnails&#39;, 1),
- (&#39;King_Gonad&#39;, 4),
- (&#39;ellinjaa&#39;, 2)]</pre>
+<pre>[(&#39;Procoolgranny&#39;, 5),
+ (&#39;DrBenway23&#39;, 1),
+ (&#39;mafuok&#39;, 2),
+ (&#39;alikat747&#39;, 1),
+ (&#39;thomshouse&#39;, 1)]</pre>
 </div>
 
 </div>
@@ -12931,7 +12947,7 @@ Name: From User, dtype: object</pre>
 </div></div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
@@ -12955,7 +12971,7 @@ Name: From User, dtype: object</pre>
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">data_dict</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
@@ -13037,7 +13053,7 @@ Name: From User, dtype: object</pre>
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -13068,7 +13084,7 @@ Name: From User, dtype: object</pre>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">histo</span><span class="p">,</span> <span class="n">bin_edges</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">histogram</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">data_dict</span><span class="o">.</span><span class="n">values</span><span class="p">()),</span> <span class="mi">15</span><span class="p">)</span>
@@ -13109,7 +13125,7 @@ Name: From User, dtype: object</pre>
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
@@ -13150,7 +13166,7 @@ Name: From User, dtype: object</pre>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">powerPlot2</span><span class="p">(</span><span class="n">data_dict</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
@@ -13185,7 +13201,7 @@ Name: From User, dtype: object</pre>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">powerlaw</span>
@@ -13208,7 +13224,7 @@ Name: From User, dtype: object</pre>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">defaultdict</span>
@@ -13225,7 +13241,7 @@ Name: From User, dtype: object</pre>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.cm</span> <span class="k">as</span> <span class="nn">cm</span>
@@ -13274,7 +13290,7 @@ Name: From User, dtype: object</pre>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;RT @AnonKitsu: ALERT!!!!!!!!!!COPS ARE KETTLING PROTESTERS IN PARK W HELICOPTERS AND PADDYWAGONS!!!! </span>
@@ -13289,7 +13305,7 @@ Name: From User, dtype: object</pre>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
@@ -13314,7 +13330,7 @@ Name: From User, dtype: object</pre>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
@@ -13339,7 +13355,7 @@ Name: From User, dtype: object</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[46]:</div>
+<div class="prompt output_prompt">Out[39]:</div>
 
 
 
@@ -13356,7 +13372,7 @@ Name: From User, dtype: object</pre>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
@@ -13401,7 +13417,7 @@ None
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
@@ -13423,7 +13439,7 @@ None
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;RT @chengjun: ALERT!!!!!!!!!!COPS ARE KETTLING PROTESTERS IN PARK W HELICOPTERS AND PADDYWAGONS!!!! </span>
@@ -13443,7 +13459,7 @@ None
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[51]:</div>
+<div class="prompt output_prompt">Out[4]:</div>
 
 
 
@@ -13460,7 +13476,7 @@ None
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;@chengjun: ALERT!!!!!!!!!!COPS ARE KETTLING PROTESTERS IN PARK W HELICOPTERS AND PADDYWAGONS!!!! </span>
@@ -13495,7 +13511,7 @@ None
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
@@ -13516,7 +13532,7 @@ None
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[54]:</div>
+<div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -13538,10 +13554,12 @@ None
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">rt_network</span> <span class="o">=</span> <span class="p">[]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">defaultdict</span>
+
+<span class="n">rt_network</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">rt_dict</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">tweet</span><span class="p">,</span><span class="n">user</span> <span class="ow">in</span> <span class="n">tweet_user_data</span><span class="p">:</span>
     <span class="n">rt_user</span> <span class="o">=</span> <span class="n">extract_rt_user</span><span class="p">(</span><span class="n">tweet</span><span class="p">)</span>
@@ -13562,15 +13580,15 @@ None
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[58]:</div>
+<div class="prompt output_prompt">Out[11]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[((&#39;MarlowesFaustus&#39;, &#39;TheNewDeal&#39;), 2),
- ((&#39;bori_214&#39;, &#39;majorityfm&#39;), 1),
- ((&#39;Obamaphile&#39;, &#39;WeOccupyAmerica&#39;), 1)]</pre>
+<pre>[((&#39;sophantastic93&#39;, &#39;TheOther99: @TheOther99&#39;), 1),
+ ((&#39;HethreC&#39;, &#39;DanielDenvir&#39;), 1),
+ ((&#39;liamrulz&#39;, &#39;holidaygoheavy&#39;), 1)]</pre>
 </div>
 
 </div>
@@ -13592,10 +13610,11 @@ None
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="&#23433;&#35013;twitter_text">&#23433;&#35013;twitter_text<a class="anchor-link" href="#&#23433;&#35013;twitter_text">&#182;</a></h1><blockquote><h2><del>pip install twitter-text-py&lt;/de&gt;</h2>
+<h1 id="&#23433;&#35013;twitter_text">&#23433;&#35013;twitter_text<a class="anchor-link" href="#&#23433;&#35013;twitter_text">&#182;</a></h1><p><a href="https://github.com/dryan/twitter-text-py/issues/21">twitter-text-py</a> could not be used for python 3</p>
+<blockquote><h3 id="pip-install-twitter-text"><del>pip install twitter-text</del><a class="anchor-link" href="#pip-install-twitter-text">&#182;</a></h3>
 </blockquote>
-<p><a href="https://github.com/dryan/twitter-text-py/issues/21">twitter-text-py</a> could not be used for python 3, I debug the problem, and make <a href="https://github.com/computational-class/twitter-text-py3">a new repo of twitter-text-py3</a>.</p>
-<blockquote><h2 id="pip-install-git+https://github.com/computational-class/twitter-text-py3.git">pip install git+<a href="https://github.com/computational-class/twitter-text-py3.git">https://github.com/computational-class/twitter-text-py3.git</a><a class="anchor-link" href="#pip-install-git+https://github.com/computational-class/twitter-text-py3.git">&#182;</a></h2>
+<p>Glyph debug the problem, and make <a href="https://github.com/glyph/twitter-text-py">a new repo of twitter-text-py3</a>.</p>
+<blockquote><h2 id="pip-install-twitter-text">pip install twitter-text<a class="anchor-link" href="#pip-install-twitter-text">&#182;</a></h2>
 </blockquote>
 
 </div>
@@ -13603,7 +13622,7 @@ None
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">extract_tweet_text</span><span class="p">(</span><span class="n">tweet</span><span class="p">,</span> <span class="n">at_names</span><span class="p">,</span> <span class="n">urls</span><span class="p">):</span>
@@ -13624,7 +13643,7 @@ None
 </div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">twitter_text</span>
@@ -13638,9 +13657,9 @@ None
 <span class="n">urls</span> <span class="o">=</span> <span class="n">ex</span><span class="o">.</span><span class="n">extract_urls</span><span class="p">()</span>
 <span class="n">hashtags</span> <span class="o">=</span> <span class="n">ex</span><span class="o">.</span><span class="n">extract_hashtags</span><span class="p">()</span>
 <span class="n">rt_user</span> <span class="o">=</span> <span class="n">extract_rt_user</span><span class="p">(</span><span class="n">tweet</span><span class="p">)</span>
-<span class="n">tweet_text</span> <span class="o">=</span> <span class="n">extract_tweet_text</span><span class="p">(</span><span class="n">tweet</span><span class="p">,</span> <span class="n">at_names</span><span class="p">,</span> <span class="n">urls</span><span class="p">)</span>
+<span class="c1">#tweet_text = extract_tweet_text(tweet, at_names, urls)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">at_names</span><span class="p">,</span> <span class="n">urls</span><span class="p">,</span> <span class="n">hashtags</span><span class="p">,</span> <span class="n">rt_user</span><span class="p">,</span><span class="s1">&#39;--------&gt;&#39;</span><span class="p">,</span> <span class="n">tweet_text</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">at_names</span><span class="p">,</span> <span class="n">urls</span><span class="p">,</span> <span class="n">hashtags</span><span class="p">,</span> <span class="n">rt_user</span><span class="p">,</span><span class="s1">&#39;--------&gt;&#39;</span><span class="p">)</span><span class="c1">#, tweet_text)</span>
 </pre></div>
 
 </div>
@@ -13657,7 +13676,7 @@ None
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;AnonKitsu&#39;, &#39;chengjun&#39;, &#39;mili&#39;] [&#39;http://computational-communication.com&#39;, &#39;http://ccc.nju.edu.cn&#39;] [&#39;OCCUPYWALLSTREET&#39;, &#39;OWS&#39;, &#39;OCCUPYNY&#39;] AnonKitsu --------&gt; : ALERT!!!!!!!!!!COPS ARE KETTLING PROTESTERS IN PARK W HELICOPTERS AND PADDYWAGONS!!!! OCCUPYWALLSTREET OWS OCCUPYNY PLEASE RT !!HELP!!!!
+<pre>[&#39;AnonKitsu&#39;, &#39;chengjun&#39;, &#39;mili&#39;] [&#39;http://computational-communication.com&#39;, &#39;http://ccc.nju.edu.cn&#39;] [&#39;OCCUPYWALLSTREET&#39;, &#39;OWS&#39;, &#39;OCCUPYNY&#39;] AnonKitsu --------&gt;
 </pre>
 </div>
 </div>
@@ -13668,7 +13687,7 @@ None
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
@@ -13684,7 +13703,7 @@ None
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">tweet</span> <span class="ow">in</span> <span class="n">tweets</span><span class="p">[:</span><span class="mi">5</span><span class="p">]:</span>
@@ -13693,10 +13712,10 @@ None
     <span class="n">urls</span> <span class="o">=</span> <span class="n">ex</span><span class="o">.</span><span class="n">extract_urls</span><span class="p">()</span>
     <span class="n">hashtags</span> <span class="o">=</span> <span class="n">ex</span><span class="o">.</span><span class="n">extract_hashtags</span><span class="p">()</span>
     <span class="n">rt_user</span> <span class="o">=</span> <span class="n">extract_rt_user</span><span class="p">(</span><span class="n">tweet</span><span class="p">)</span>
-    <span class="n">tweet_text</span> <span class="o">=</span> <span class="n">extract_tweet_text</span><span class="p">(</span><span class="n">tweet</span><span class="p">,</span> <span class="n">at_names</span><span class="p">,</span> <span class="n">urls</span><span class="p">)</span>
+    <span class="c1">#tweet_text = extract_tweet_text(tweet, at_names, urls)</span>
 
     <span class="nb">print</span><span class="p">(</span><span class="n">at_names</span><span class="p">,</span> <span class="n">urls</span><span class="p">,</span> <span class="n">hashtags</span><span class="p">,</span> <span class="n">rt_user</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">tweet_text</span><span class="p">)</span>
+    <span class="c1">#print(tweet_text)</span>
 </pre></div>
 
 </div>
@@ -13714,15 +13733,10 @@ None
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[] [] [] None
-Text
 [&#39;AnonKitsu&#39;] [] [&#39;OCCUPYWALLSTREET&#39;, &#39;OWS&#39;, &#39;OCCUPYNY&#39;] AnonKitsu
-: ALERT!!!!!!!!!!COPS ARE KETTLING PROTESTERS IN PARK W HELICOPTERS AND PADDYWAGONS!!!! OCCUPYWALLSTREET OWS OCCUPYNY PLEASE RT !!HELP!!!!
 [&#39;jamiekilstein&#39;, &#39;allisonkilkenny&#39;] [&#39;http://t.co/Fte55Kh7&#39;] [&#39;ows&#39;] None
-Interesting interview (never aired, wonder why??) by Fox with ows protester 
 [&#39;Seductivpancake&#39;] [] [&#39;ows&#39;] None
- Right! Those guys have a victory condition: regime change. ows doesn&#39;t seem to have a goal I can figure out.
 [&#39;bembel&#39;] [&#39;http://j.mp/rhHavq&#39;] [&#39;OccupyWallStreet&#39;, &#39;OWS&#39;] bembel
- Occupy Wall Street als linke Antwort auf die Tea Party?OccupyWallStreet OWS
 </pre>
 </div>
 </div>

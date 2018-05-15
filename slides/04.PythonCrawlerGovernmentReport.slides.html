@@ -11919,7 +11919,7 @@ a.anchor-link {
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
@@ -11933,7 +11933,7 @@ a.anchor-link {
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">display_html</span><span class="p">,</span> <span class="n">HTML</span>
@@ -11951,7 +11951,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[2]:</div>
+<div class="prompt output_prompt">Out[1]:</div>
 
 
 
@@ -11978,7 +11978,7 @@ a.anchor-link {
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># get the link for each year</span>
@@ -11997,7 +11997,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[29]:</div>
+<div class="prompt output_prompt">Out[5]:</div>
 
 
 
@@ -12104,7 +12104,7 @@ content = content.text
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Specify the encoding</span>
@@ -12119,7 +12119,7 @@ content = content.text
 </div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">content</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span> 
@@ -12138,7 +12138,7 @@ content = content.text
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[12]:</div>
+<div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -12155,7 +12155,7 @@ content = content.text
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">links</span><span class="p">)</span>
@@ -12171,7 +12171,7 @@ content = content.text
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[15]:</div>
+<div class="prompt output_prompt">Out[8]:</div>
 
 
 
@@ -12188,7 +12188,7 @@ content = content.text
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">links</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;href&#39;</span><span class="p">]</span>
@@ -12204,7 +12204,7 @@ content = content.text
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[17]:</div>
+<div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -12287,7 +12287,7 @@ content = content.text
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">hyperlinks</span> <span class="o">=</span> <span class="p">[</span><span class="n">url</span> <span class="o">+</span> <span class="n">i</span><span class="p">[</span><span class="s1">&#39;href&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;./&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">links</span><span class="p">]</span>
@@ -12304,7 +12304,7 @@ content = content.text
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[20]:</div>
+<div class="prompt output_prompt">Out[25]:</div>
 
 
 
@@ -12325,7 +12325,7 @@ content = content.text
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">hyperlinks</span><span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">:]</span>
@@ -12341,7 +12341,7 @@ content = content.text
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[21]:</div>
+<div class="prompt output_prompt">Out[26]:</div>
 
 
 
@@ -12362,7 +12362,7 @@ content = content.text
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">hyperlinks</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="c1"># 2007年有分页</span>
@@ -12378,7 +12378,7 @@ content = content.text
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[22]:</div>
+<div class="prompt output_prompt">Out[27]:</div>
 
 
 
@@ -12452,7 +12452,7 @@ content = content.text
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">url_i</span> <span class="o">=</span> <span class="s1">&#39;http://www.hprc.org.cn/wxzl/wxysl/lczf/dishiyijie_1/200908/t20090818_27775.html&#39;</span>
@@ -12473,7 +12473,7 @@ content = content.text
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">scripts</span>
@@ -12489,7 +12489,7 @@ content = content.text
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[37]:</div>
+<div class="prompt output_prompt">Out[12]:</div>
 
 
 
@@ -12542,7 +12542,7 @@ content = content.text
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">scripts</span><span class="o">.</span><span class="n">text</span>
@@ -12558,7 +12558,7 @@ content = content.text
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[40]:</div>
+<div class="prompt output_prompt">Out[13]:</div>
 
 
 
@@ -12575,11 +12575,14 @@ content = content.text
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">countPage</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">scripts</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;countPage = &#39;</span><span class="p">)</span>\
-                <span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;//&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># countPage = int(&#39;&#39;.join(scripts).split(&#39;countPage = &#39;)\</span>
+<span class="c1">#                 [1].split(&#39;//&#39;)[0])</span>
+<span class="c1"># countPage</span>
+
+<span class="n">countPage</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">scripts</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;countPage = &#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;//&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
 <span class="n">countPage</span>
 </pre></div>
 
@@ -12593,7 +12596,7 @@ content = content.text
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[41]:</div>
+<div class="prompt output_prompt">Out[22]:</div>
 
 
 
@@ -12610,7 +12613,7 @@ content = content.text
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
@@ -12651,7 +12654,7 @@ content = content.text
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 抓取48年政府工作报告内容</span>
@@ -12686,13 +12689,13 @@ content = content.text
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;../data/gov_reports1954-2017.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;../data/gov_reports1954-2017.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">encoding</span> <span class="o">=</span> <span class="s1">&#39;utf8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">reports</span><span class="p">:</span>
         <span class="n">line</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">r</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="o">+</span><span class="n">reports</span><span class="p">[</span><span class="n">r</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span> <span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span>
-        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">))</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12702,7 +12705,7 @@ content = content.text
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -12717,7 +12720,7 @@ content = content.text
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span>
@@ -12733,7 +12736,7 @@ content = content.text
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[56]:</div>
+<div class="prompt output_prompt">Out[32]:</div>
 
 
 

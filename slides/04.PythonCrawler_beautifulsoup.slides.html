@@ -11916,7 +11916,7 @@ a.anchor-link {
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 爬虫基本原理</span>
@@ -11935,7 +11935,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[40]:</div>
+<div class="prompt output_prompt">Out[2]:</div>
 
 
 
@@ -11997,7 +11997,7 @@ a.anchor-link {
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
@@ -12014,7 +12014,7 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">)</span> 
 </pre></div>
 
 </div>
@@ -12052,22 +12052,163 @@ get(url, params=None, **kwargs)
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;http://computational-class.github.io/bigdata/data/test.html&#39;</span>
 <span class="n">content</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-<span class="c1">#help(content)</span>
+<span class="n">help</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Help on Response in module requests.models object:
+
+class Response(builtins.object)
+ |  The :class:`Response &lt;Response&gt;` object, which contains a
+ |  server&#39;s response to an HTTP request.
+ |  
+ |  Methods defined here:
+ |  
+ |  __bool__(self)
+ |      Returns True if :attr:`status_code` is less than 400.
+ |      
+ |      This attribute checks if the status code of the response is between
+ |      400 and 600 to see if there was a client error or a server error. If
+ |      the status code, is between 200 and 400, this will return True. This
+ |      is **not** a check to see if the response code is ``200 OK``.
+ |  
+ |  __getstate__(self)
+ |  
+ |  __init__(self)
+ |      Initialize self.  See help(type(self)) for accurate signature.
+ |  
+ |  __iter__(self)
+ |      Allows you to use a response as an iterator.
+ |  
+ |  __nonzero__(self)
+ |      Returns True if :attr:`status_code` is less than 400.
+ |      
+ |      This attribute checks if the status code of the response is between
+ |      400 and 600 to see if there was a client error or a server error. If
+ |      the status code, is between 200 and 400, this will return True. This
+ |      is **not** a check to see if the response code is ``200 OK``.
+ |  
+ |  __repr__(self)
+ |      Return repr(self).
+ |  
+ |  __setstate__(self, state)
+ |  
+ |  close(self)
+ |      Releases the connection back to the pool. Once this method has been
+ |      called the underlying ``raw`` object must not be accessed again.
+ |      
+ |      *Note: Should not normally need to be called explicitly.*
+ |  
+ |  iter_content(self, chunk_size=1, decode_unicode=False)
+ |      Iterates over the response data.  When stream=True is set on the
+ |      request, this avoids reading the content at once into memory for
+ |      large responses.  The chunk size is the number of bytes it should
+ |      read into memory.  This is not necessarily the length of each item
+ |      returned as decoding can take place.
+ |      
+ |      chunk_size must be of type int or None. A value of None will
+ |      function differently depending on the value of `stream`.
+ |      stream=True will read data as it arrives in whatever size the
+ |      chunks are received. If stream=False, data is returned as
+ |      a single chunk.
+ |      
+ |      If decode_unicode is True, content will be decoded using the best
+ |      available encoding based on the response.
+ |  
+ |  iter_lines(self, chunk_size=512, decode_unicode=None, delimiter=None)
+ |      Iterates over the response data, one line at a time.  When
+ |      stream=True is set on the request, this avoids reading the
+ |      content at once into memory for large responses.
+ |      
+ |      .. note:: This method is not reentrant safe.
+ |  
+ |  json(self, **kwargs)
+ |      Returns the json-encoded content of a response, if any.
+ |      
+ |      :param \*\*kwargs: Optional arguments that ``json.loads`` takes.
+ |      :raises ValueError: If the response body does not contain valid json.
+ |  
+ |  raise_for_status(self)
+ |      Raises stored :class:`HTTPError`, if one occurred.
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data descriptors defined here:
+ |  
+ |  __dict__
+ |      dictionary for instance variables (if defined)
+ |  
+ |  __weakref__
+ |      list of weak references to the object (if defined)
+ |  
+ |  apparent_encoding
+ |      The apparent encoding, provided by the chardet library
+ |  
+ |  content
+ |      Content of the response, in bytes.
+ |  
+ |  is_permanent_redirect
+ |      True if this Response one of the permanent versions of redirect
+ |  
+ |  is_redirect
+ |      True if this Response is a well-formed HTTP redirect that could have
+ |      been processed automatically (by :meth:`Session.resolve_redirects`).
+ |  
+ |  links
+ |      Returns the parsed header links of the response, if any.
+ |  
+ |  ok
+ |      Returns True if :attr:`status_code` is less than 400.
+ |      
+ |      This attribute checks if the status code of the response is between
+ |      400 and 600 to see if there was a client error or a server error. If
+ |      the status code, is between 200 and 400, this will return True. This
+ |      is **not** a check to see if the response code is ``200 OK``.
+ |  
+ |  text
+ |      Content of the response, in unicode.
+ |      
+ |      If Response.encoding is None, encoding will be guessed using
+ |      ``chardet``.
+ |      
+ |      The encoding of the response content is determined based solely on HTTP
+ |      headers, following RFC 2616 to the letter. If you can take advantage of
+ |      non-HTTP knowledge to make a better guess at the encoding, you should
+ |      set ``r.encoding`` appropriately before accessing this property.
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes defined here:
+ |  
+ |  __attrs__ = [&#39;_content&#39;, &#39;status_code&#39;, &#39;headers&#39;, &#39;url&#39;, &#39;history&#39;, &#39;...
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">content</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
@@ -12108,7 +12249,7 @@ and they lived at the bottom of a well.&lt;/p&gt;
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[87]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">content</span><span class="o">.</span><span class="n">encoding</span>
@@ -12124,7 +12265,7 @@ and they lived at the bottom of a well.&lt;/p&gt;
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[87]:</div>
+<div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -12148,7 +12289,7 @@ and they lived at the bottom of a well.&lt;/p&gt;
 <ul>
 <li>Beautiful Soup provides a few simple methods. It doesn't take much code to write an application</li>
 <li>Beautiful Soup automatically converts incoming documents to Unicode and outgoing documents to UTF-8. Then you just have to specify the original encoding.</li>
-<li>Beautiful Soup sits on top of popular Python parsers like lxml and html5lib.</li>
+<li>Beautiful Soup sits on top of popular Python parsers like <code>lxml</code> and <code>html5lib</code>.</li>
 </ul>
 
 </div>
@@ -12192,7 +12333,7 @@ and they lived at the bottom of a well.&lt;/p&gt;
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;http://computational-class.github.io/bigdata/data/test.html&#39;</span>
@@ -12212,7 +12353,7 @@ and they lived at the bottom of a well.&lt;/p&gt;
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[57]:</div>
+<div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -12237,7 +12378,7 @@ and they lived at the bottom of a well.&lt;/p&gt;
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[84]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">soup</span><span class="o">.</span><span class="n">prettify</span><span class="p">())</span>
@@ -12345,8 +12486,10 @@ and they lived at the bottom of a well.
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Select&#26041;&#27861;&#19977;&#27493;&#39588;">Select&#26041;&#27861;&#19977;&#27493;&#39588;<a class="anchor-link" href="#Select&#26041;&#27861;&#19977;&#27493;&#39588;">&#182;</a></h2><ul>
 <li>Inspect (检查)</li>
-<li>Copy</li>
+<li>Copy<ul>
 <li>Copy Selector</li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -12359,15 +12502,16 @@ and they lived at the bottom of a well.
 <ul>
 <li>鼠标选中标题<code>The Dormouse's story</code>, 右键检查Inspect</li>
 <li>鼠标移动到选中的源代码</li>
-<li>右键Copy--&gt;Copy Selector <code>body &gt; p.title &gt; b</code></li>
+<li>右键Copy--&gt;Copy Selector </li>
 </ul>
+<p><code>body &gt; p.title &gt; b</code></p>
 
 </div>
 </div>
 </div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">soup</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;body &gt; p.title &gt; b&#39;</span><span class="p">)</span><span class="c1">#[0].text</span>
@@ -12383,7 +12527,7 @@ and they lived at the bottom of a well.
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[61]:</div>
+<div class="prompt output_prompt">Out[14]:</div>
 
 
 
@@ -12630,10 +12774,10 @@ and they lived at the bottom of a well.
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">soup</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;#link2&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">soup</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;#link1&#39;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12646,13 +12790,13 @@ and they lived at the bottom of a well.
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[28]:</div>
+<div class="prompt output_prompt">Out[15]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[&lt;a class=&#34;sister&#34; href=&#34;http://example.com/lacie&#34; id=&#34;link2&#34;&gt;Lacie&lt;/a&gt;]</pre>
+<pre>[&lt;a class=&#34;sister&#34; href=&#34;http://example.com/elsie&#34; id=&#34;link1&#34;&gt;Elsie&lt;/a&gt;]</pre>
 </div>
 
 </div>
@@ -12663,10 +12807,10 @@ and they lived at the bottom of a well.
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">soup</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;#link2&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;href&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">soup</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;#link1&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;href&#39;</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -12679,13 +12823,13 @@ and they lived at the bottom of a well.
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[29]:</div>
+<div class="prompt output_prompt">Out[16]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;http://example.com/lacie&#39;</pre>
+<pre>&#39;http://example.com/elsie&#39;</pre>
 </div>
 
 </div>
@@ -12754,7 +12898,7 @@ and they lived at the bottom of a well.
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[71]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">soup</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;head &gt; title&quot;</span><span class="p">)</span>
@@ -12770,7 +12914,7 @@ and they lived at the bottom of a well.
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[71]:</div>
+<div class="prompt output_prompt">Out[17]:</div>
 
 
 
@@ -13437,7 +13581,7 @@ p
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span> <span class="s1">&#39;title&#39;</span><span class="p">)</span>
@@ -13453,13 +13597,13 @@ p
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[48]:</div>
+<div class="prompt output_prompt">Out[19]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[&lt;p class=&#34;title&#34;&gt;&lt;b&gt;The Dormouse&#39;s story&lt;/b&gt;&lt;/p&gt;]</pre>
+<pre>&#34;The Dormouse&#39;s story&#34;</pre>
 </div>
 
 </div>
@@ -13507,7 +13651,7 @@ p
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;class&#39;</span><span class="p">,</span> <span class="s1">&#39;story&#39;</span><span class="p">})[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
@@ -13523,7 +13667,7 @@ p
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[50]:</div>
+<div class="prompt output_prompt">Out[34]:</div>
 
 
 
@@ -13924,7 +14068,7 @@ and they lived at the bottom of a well.
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
 <hr>
-<h1 id="&#25968;&#25454;&#25235;&#21462;&#65306;">&#25968;&#25454;&#25235;&#21462;&#65306;<a class="anchor-link" href="#&#25968;&#25454;&#25235;&#21462;&#65306;">&#182;</a></h1><blockquote><h1 id="&#26681;&#25454;URL&#25235;&#21462;&#24494;&#20449;&#20844;&#20247;&#21495;&#25991;&#31456;&#20869;&#23481;">&#26681;&#25454;URL&#25235;&#21462;&#24494;&#20449;&#20844;&#20247;&#21495;&#25991;&#31456;&#20869;&#23481;<a class="anchor-link" href="#&#26681;&#25454;URL&#25235;&#21462;&#24494;&#20449;&#20844;&#20247;&#21495;&#25991;&#31456;&#20869;&#23481;">&#182;</a></h1><hr>
+<h1 id="&#25968;&#25454;&#25235;&#21462;&#65306;">&#25968;&#25454;&#25235;&#21462;&#65306;<a class="anchor-link" href="#&#25968;&#25454;&#25235;&#21462;&#65306;">&#182;</a></h1><blockquote><h1 id="&#25235;&#21462;&#24494;&#20449;&#20844;&#20247;&#21495;&#25991;&#31456;&#20869;&#23481;">&#25235;&#21462;&#24494;&#20449;&#20844;&#20247;&#21495;&#25991;&#31456;&#20869;&#23481;<a class="anchor-link" href="#&#25235;&#21462;&#24494;&#20449;&#20844;&#20247;&#21495;&#25991;&#31456;&#20869;&#23481;">&#182;</a></h1><hr>
 <hr>
 </blockquote>
 <p>王成军</p>
@@ -13936,7 +14080,7 @@ and they lived at the bottom of a well.
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">display_html</span><span class="p">,</span> <span class="n">HTML</span>
@@ -13956,7 +14100,7 @@ and they lived at the bottom of a well.
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[62]:</div>
+<div class="prompt output_prompt">Out[35]:</div>
 
 
 
@@ -13980,11 +14124,10 @@ and they lived at the bottom of a well.
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;http://mp.weixin.qq.com/s?__biz=MzA3MjQ5MTE3OA==&amp;</span><span class="se">\</span>
-<span class="s2">mid=206241627&amp;idx=1&amp;sn=471e59c6cf7c8dae452245dbea22c8f3&amp;3rd=MzA3MDU4NTYzMw==&amp;scene=6#rd&quot;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;http://mp.weixin.qq.com/s?__biz=MzA3MjQ5MTE3OA==&amp;mid=206241627&amp;idx=1&amp;sn=471e59c6cf7c8dae452245dbea22c8f3&amp;3rd=MzA3MDU4NTYzMw==&amp;scene=6#rd&quot;</span>
 <span class="n">content</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">text</span> <span class="c1">#获取网页的html文本</span>
 <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">content</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span> 
 </pre></div>
@@ -13996,7 +14139,7 @@ and they lived at the bottom of a well.
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">title</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;#activity-name&quot;</span><span class="p">)</span>
@@ -14013,7 +14156,7 @@ and they lived at the bottom of a well.
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[64]:</div>
+<div class="prompt output_prompt">Out[37]:</div>
 
 
 
@@ -14030,10 +14173,10 @@ and they lived at the bottom of a well.
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;h2&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;class&#39;</span><span class="p">,</span> <span class="s1">&#39;rich_media_title&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;h2&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;class&#39;</span><span class="p">,</span> <span class="s1">&#39;rich_media_title&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -14046,14 +14189,15 @@ and they lived at the bottom of a well.
 
 <div class="output_area">
 
-<div class="prompt"></div>
+<div class="prompt output_prompt">Out[40]:</div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>
-                    南大新传 | 微议题：地震中民族自豪—“中国人先撤”                                    
-</pre>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;南大新传 | 微议题：地震中民族自豪—“中国人先撤”&#39;</pre>
 </div>
+
 </div>
 
 </div>
@@ -14116,10 +14260,10 @@ and they lived at the bottom of a well.
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[186]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;em&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;em&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
 </pre></div>
 
 </div>
@@ -14132,13 +14276,15 @@ and they lived at the bottom of a well.
 
 <div class="output_area">
 
-<div class="prompt"></div>
+<div class="prompt output_prompt">Out[42]:</div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>2015-05-04
-</pre>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;2015-05-04&#39;</pre>
 </div>
+
 </div>
 
 </div>
@@ -14147,7 +14293,7 @@ and they lived at the bottom of a well.
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[187]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">article</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;class&#39;</span> <span class="p">,</span> <span class="s1">&#39;rich_media_content&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">text</span>
@@ -14181,7 +14327,7 @@ and they lived at the bottom of a well.
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">rmml</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;class&#39;</span><span class="p">,</span> <span class="s1">&#39;rich_media_meta_list&#39;</span><span class="p">})</span>
@@ -14257,7 +14403,7 @@ and they lived at the bottom of a well.
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[76]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
@@ -14265,7 +14411,7 @@ and they lived at the bottom of a well.
 
 <span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://movie.douban.com/subject/26611804/&#39;</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
-<span class="n">s</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">HTML</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> 
+<span class="n">s</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">HTML</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>  
 </pre></div>
 
 </div>
@@ -14287,7 +14433,7 @@ and they lived at the bottom of a well.
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[77]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">title</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">xpath</span><span class="p">(</span><span class="s1">&#39;//*[@id=&quot;content&quot;]/h1/span[1]/text()&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
@@ -14308,7 +14454,7 @@ and they lived at the bottom of a well.
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[78]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">director</span><span class="p">,</span> <span class="n">actors</span><span class="p">,</span> <span class="n">type1</span><span class="p">,</span> <span class="n">type2</span><span class="p">,</span> <span class="n">type3</span><span class="p">,</span> <span class="n">time</span><span class="p">,</span> <span class="n">length</span><span class="p">,</span> <span class="n">score</span><span class="p">)</span>
@@ -14348,13 +14494,26 @@ and they lived at the bottom of a well.
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[81]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
-<span class="kn">from</span> <span class="nn">bs4</span> <span class="k">import</span> <span class="n">BeautifulSoup</span>
 <span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://api.douban.com/v2/movie/26611804&#39;</span>
-<span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+<span class="n">jsonm</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#jsonm.values()</span>
+<span class="n">jsonm</span><span class="o">.</span><span class="n">keys</span><span class="p">(),</span> <span class="n">jsonm</span><span class="p">[</span><span class="s1">&#39;rating&#39;</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -14367,74 +14526,18 @@ and they lived at the bottom of a well.
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[81]:</div>
+<div class="prompt output_prompt">Out[58]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>{&#39;alt&#39;: &#39;https://movie.douban.com/movie/26611804&#39;,
- &#39;alt_title&#39;: &#39;三块广告牌 / 意外(台)&#39;,
- &#39;attrs&#39;: {&#39;cast&#39;: [&#39;弗兰西斯·麦克多蒙德 Frances McDormand&#39;,
-   &#39;伍迪·哈里森 Woody Harrelson&#39;,
-   &#39;山姆·洛克威尔 Sam Rockwell&#39;,
-   &#39;艾比·考尼什 Abbie Cornish&#39;,
-   &#39;卢卡斯·赫奇斯 Lucas Hedges&#39;,
-   &#39;彼特·丁克拉奇 Peter Dinklage&#39;,
-   &#39;约翰·浩克斯 John Hawkes&#39;,
-   &#39;卡赖伯·兰德里·琼斯 Caleb Landry Jones&#39;,
-   &#39;凯瑟琳·牛顿 Kathryn Newton&#39;,
-   &#39;凯瑞·康顿 Kerry Condon&#39;,
-   &#39;泽利科·伊万内克 Zeljko Ivanek&#39;,
-   &#39;萨玛拉·维文 Samara Weaving&#39;,
-   &#39;克拉克·彼得斯 Clarke Peters&#39;,
-   &#39;尼克·西塞 Nick Searcy&#39;,
-   &#39;阿曼达·沃伦 Amanda Warren&#39;,
-   &#39;玛拉雅·瑞沃拉·德鲁  Malaya Rivera Drew&#39;,
-   &#39;布兰登·萨克斯顿 Brendan Sexton III&#39;,
-   &#39;迈克尔·艾伦·米利甘 Michael Aaron Milligan&#39;],
-  &#39;country&#39;: [&#39;英国&#39;, &#39;美国&#39;],
-  &#39;director&#39;: [&#39;马丁·麦克唐纳 Martin McDonagh&#39;],
-  &#39;language&#39;: [&#39;英语&#39;],
-  &#39;movie_duration&#39;: [&#39;115分钟&#39;],
-  &#39;movie_type&#39;: [&#39;剧情&#39;, &#39;犯罪&#39;],
-  &#39;pubdate&#39;: [&#39;2017-09-04(威尼斯电影节)&#39;, &#39;2017-12-01(美国)&#39;, &#39;2018-03-02(中国大陆)&#39;],
-  &#39;title&#39;: [&#39;Three Billboards Outside Ebbing, Missouri&#39;],
-  &#39;website&#39;: [&#39;www.foxsearchlight.com/threebillboardsoutsideebbingmissouri&#39;],
-  &#39;writer&#39;: [&#39;马丁·麦克唐纳 Martin McDonagh&#39;],
-  &#39;year&#39;: [&#39;2017&#39;]},
- &#39;author&#39;: [{&#39;name&#39;: &#39;马丁·麦克唐纳 Martin McDonagh&#39;}],
- &#39;id&#39;: &#39;https://api.douban.com/movie/26611804&#39;,
- &#39;image&#39;: &#39;https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2510081688.jpg&#39;,
- &#39;mobile_link&#39;: &#39;https://m.douban.com/movie/subject/26611804/&#39;,
- &#39;rating&#39;: {&#39;average&#39;: &#39;8.7&#39;, &#39;max&#39;: 10, &#39;min&#39;: 0, &#39;numRaters&#39;: 232164},
- &#39;summary&#39;: &#39;米尔德雷德（弗兰西斯·麦克多蒙德 Frances McDormand 饰）的女儿在外出时惨遭奸杀，米尔德雷德和丈夫查理（约翰·哈克斯 John Hawkes 饰）之间的婚姻因此走到了尽头，如今，她同儿子罗比（卢卡斯·赫奇斯 Lucas Hedges饰）过着相依为命的生活。一晃眼几个月过去了，案件仍然没有告破预兆，而警方似乎早已经将注意力从案子上转移了开来。\n被绝望和痛苦缠绕的米尔德雷德租下了高速公路边上的三块巨型广告牌，在上面控诉警方办案无能，并将矛头直接对准了警察局局长威洛比（伍迪·哈里森 Woody Harrelson 饰）。实际上，威洛比一直隐瞒着自己身患绝症命不久矣的事实。因为这三块广告牌，米尔德雷德和威洛比的生活发生了翻天覆地的变化。&#39;,
- &#39;tags&#39;: [{&#39;count&#39;: 26347, &#39;name&#39;: &#39;人性&#39;},
-  {&#39;count&#39;: 24238, &#39;name&#39;: &#39;美国&#39;},
-  {&#39;count&#39;: 23254, &#39;name&#39;: &#39;剧情&#39;},
-  {&#39;count&#39;: 21002, &#39;name&#39;: &#39;犯罪&#39;},
-  {&#39;count&#39;: 19422, &#39;name&#39;: &#39;黑色幽默&#39;},
-  {&#39;count&#39;: 11326, &#39;name&#39;: &#39;奥斯卡&#39;},
-  {&#39;count&#39;: 11222, &#39;name&#39;: &#39;女性&#39;},
-  {&#39;count&#39;: 11031, &#39;name&#39;: &#39;2017&#39;}],
- &#39;title&#39;: &#39;Three Billboards Outside Ebbing, Missouri&#39;}</pre>
+<pre>(dict_keys([&#39;image&#39;, &#39;rating&#39;, &#39;attrs&#39;, &#39;id&#39;, &#39;title&#39;, &#39;mobile_link&#39;, &#39;tags&#39;, &#39;alt&#39;, &#39;author&#39;, &#39;summary&#39;, &#39;alt_title&#39;]),
+ {&#39;average&#39;: &#39;8.7&#39;, &#39;max&#39;: 10, &#39;min&#39;: 0, &#39;numRaters&#39;: 252898})</pre>
 </div>
 
 </div>
 
-</div>
-</div>
-
-</div></section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[82]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">jsonm</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-</pre></div>
-
-</div>
 </div>
 </div>
 
@@ -14598,7 +14701,7 @@ and they lived at the bottom of a well.
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
@@ -14716,7 +14819,7 @@ and they lived at the bottom of a well.
 </div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[60]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
@@ -14734,7 +14837,7 @@ and they lived at the bottom of a well.
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[61]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">movies</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;class&#39;</span><span class="p">,</span> <span class="s1">&#39;info&#39;</span><span class="p">})</span>
@@ -14747,7 +14850,7 @@ and they lived at the bottom of a well.
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[62]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">movies</span><span class="p">)</span>
@@ -14763,7 +14866,7 @@ and they lived at the bottom of a well.
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[46]:</div>
+<div class="prompt output_prompt">Out[62]:</div>
 
 
 
@@ -14780,7 +14883,7 @@ and they lived at the bottom of a well.
 </div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[63]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">movies</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">a</span><span class="p">[</span><span class="s1">&#39;href&#39;</span><span class="p">]</span>
@@ -14796,7 +14899,7 @@ and they lived at the bottom of a well.
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[40]:</div>
+<div class="prompt output_prompt">Out[63]:</div>
 
 
 
@@ -14951,7 +15054,7 @@ and they lived at the bottom of a well.
 </div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[64]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">movies</span><span class="p">:</span>
@@ -14977,31 +15080,31 @@ and they lived at the bottom of a well.
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>https://movie.douban.com/subject/1292052/ 肖申克的救赎 9.6 1004428
-https://movie.douban.com/subject/1291546/ 霸王别姬 9.5 730274
-https://movie.douban.com/subject/1295644/ 这个杀手不太冷 9.4 944453
-https://movie.douban.com/subject/1292720/ 阿甘正传 9.4 803299
-https://movie.douban.com/subject/1292063/ 美丽人生 9.5 469154
-https://movie.douban.com/subject/1291561/ 千与千寻 9.2 751569
-https://movie.douban.com/subject/1292722/ 泰坦尼克号 9.2 742872
-https://movie.douban.com/subject/1295124/ 辛德勒的名单 9.4 427309
-https://movie.douban.com/subject/3541415/ 盗梦空间 9.3 843653
-https://movie.douban.com/subject/2131459/ 机器人总动员 9.3 553284
-https://movie.douban.com/subject/1292001/ 海上钢琴师 9.2 651204
-https://movie.douban.com/subject/3793023/ 三傻大闹宝莱坞 9.2 757442
-https://movie.douban.com/subject/3011091/ 忠犬八公的故事 9.2 521423
-https://movie.douban.com/subject/1291549/ 放牛班的春天 9.2 506372
-https://movie.douban.com/subject/1292213/ 大话西游之大圣娶亲 9.2 553338
-https://movie.douban.com/subject/1292064/ 楚门的世界 9.1 524061
-https://movie.douban.com/subject/1291841/ 教父 9.2 380693
-https://movie.douban.com/subject/1291560/ 龙猫 9.1 467286
-https://movie.douban.com/subject/5912992/ 熔炉 9.2 303959
-https://movie.douban.com/subject/1300267/ 乱世佳人 9.2 296362
-https://movie.douban.com/subject/1889243/ 星际穿越 9.2 551868
-https://movie.douban.com/subject/6786002/ 触不可及 9.1 410269
-https://movie.douban.com/subject/1307914/ 无间道 9.0 451855
-https://movie.douban.com/subject/1849031/ 当幸福来敲门 8.9 599087
-https://movie.douban.com/subject/1291828/ 天堂电影院 9.1 335061
+<pre>https://movie.douban.com/subject/1292052/ 肖申克的救赎 9.6 1021383
+https://movie.douban.com/subject/1291546/ 霸王别姬 9.5 742984
+https://movie.douban.com/subject/1295644/ 这个杀手不太冷 9.4 957578
+https://movie.douban.com/subject/1292720/ 阿甘正传 9.4 814634
+https://movie.douban.com/subject/1292063/ 美丽人生 9.5 475813
+https://movie.douban.com/subject/1291561/ 千与千寻 9.3 762619
+https://movie.douban.com/subject/1292722/ 泰坦尼克号 9.3 754309
+https://movie.douban.com/subject/1295124/ 辛德勒的名单 9.4 433191
+https://movie.douban.com/subject/3541415/ 盗梦空间 9.3 853620
+https://movie.douban.com/subject/2131459/ 机器人总动员 9.3 559729
+https://movie.douban.com/subject/1292001/ 海上钢琴师 9.2 657670
+https://movie.douban.com/subject/3793023/ 三傻大闹宝莱坞 9.2 767473
+https://movie.douban.com/subject/3011091/ 忠犬八公的故事 9.2 529473
+https://movie.douban.com/subject/1291549/ 放牛班的春天 9.2 513071
+https://movie.douban.com/subject/1292213/ 大话西游之大圣娶亲 9.2 561091
+https://movie.douban.com/subject/1292064/ 楚门的世界 9.1 533017
+https://movie.douban.com/subject/1291560/ 龙猫 9.1 473631
+https://movie.douban.com/subject/1291841/ 教父 9.2 385130
+https://movie.douban.com/subject/5912992/ 熔炉 9.2 309138
+https://movie.douban.com/subject/1889243/ 星际穿越 9.2 560855
+https://movie.douban.com/subject/1300267/ 乱世佳人 9.2 299301
+https://movie.douban.com/subject/6786002/ 触不可及 9.1 416073
+https://movie.douban.com/subject/1307914/ 无间道 9.0 458107
+https://movie.douban.com/subject/1849031/ 当幸福来敲门 8.9 606767
+https://movie.douban.com/subject/1291828/ 天堂电影院 9.1 337952
 </pre>
 </div>
 </div>
@@ -15053,7 +15156,7 @@ https://movie.douban.com/top250?start=225&amp;filter=
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[65]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
@@ -15081,7 +15184,7 @@ https://movie.douban.com/top250?start=225&amp;filter=
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[66]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -15101,7 +15204,7 @@ https://movie.douban.com/top250?start=225&amp;filter=
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[2]:</div>
+<div class="prompt output_prompt">Out[66]:</div>
 
 
 
@@ -15123,35 +15226,35 @@ https://movie.douban.com/top250?start=225&amp;filter=
       <td>https://movie.douban.com/subject/1292052/</td>
       <td>肖申克的救赎</td>
       <td>9.6</td>
-      <td>1004428</td>
+      <td>1021383</td>
     </tr>
     <tr>
       <th>1</th>
       <td>https://movie.douban.com/subject/1291546/</td>
       <td>霸王别姬</td>
       <td>9.5</td>
-      <td>730274</td>
+      <td>742984</td>
     </tr>
     <tr>
       <th>2</th>
       <td>https://movie.douban.com/subject/1295644/</td>
       <td>这个杀手不太冷</td>
       <td>9.4</td>
-      <td>944660</td>
+      <td>957578</td>
     </tr>
     <tr>
       <th>3</th>
       <td>https://movie.douban.com/subject/1292720/</td>
       <td>阿甘正传</td>
       <td>9.4</td>
-      <td>803594</td>
+      <td>814634</td>
     </tr>
     <tr>
       <th>4</th>
       <td>https://movie.douban.com/subject/1292063/</td>
       <td>美丽人生</td>
       <td>9.5</td>
-      <td>469332</td>
+      <td>475813</td>
     </tr>
   </tbody>
 </table>
@@ -15357,13 +15460,16 @@ https://movie.douban.com/top250?start=225&amp;filter=
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[69]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">alist</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">:</span>
     <span class="n">alist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">rating_num</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">df</span><span class="o">.</span><span class="n">rating</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">df</span><span class="o">.</span><span class="n">title</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">])</span>
-<span class="n">alist</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span>
+
+<span class="n">blist</span> <span class="o">=</span><span class="p">[[</span><span class="n">df</span><span class="o">.</span><span class="n">rating_num</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">df</span><span class="o">.</span><span class="n">rating</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">df</span><span class="o">.</span><span class="n">title</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">]</span> 
+
+<span class="n">alist</span>
 </pre></div>
 
 </div>
@@ -15376,15 +15482,262 @@ https://movie.douban.com/top250?start=225&amp;filter=
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[18]:</div>
+<div class="prompt output_prompt">Out[69]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[[1004428, 9.5999999999999996, &#39;肖申克的救赎&#39;],
- [730274, 9.5, &#39;霸王别姬&#39;],
- [944660, 9.4000000000000004, &#39;这个杀手不太冷&#39;]]</pre>
+<pre>[[1021383, 9.5999999999999996, &#39;肖申克的救赎&#39;],
+ [742984, 9.5, &#39;霸王别姬&#39;],
+ [957578, 9.4000000000000004, &#39;这个杀手不太冷&#39;],
+ [814634, 9.4000000000000004, &#39;阿甘正传&#39;],
+ [475813, 9.5, &#39;美丽人生&#39;],
+ [762619, 9.3000000000000007, &#39;千与千寻&#39;],
+ [754309, 9.3000000000000007, &#39;泰坦尼克号&#39;],
+ [433191, 9.4000000000000004, &#39;辛德勒的名单&#39;],
+ [853620, 9.3000000000000007, &#39;盗梦空间&#39;],
+ [559729, 9.3000000000000007, &#39;机器人总动员&#39;],
+ [657670, 9.1999999999999993, &#39;海上钢琴师&#39;],
+ [767473, 9.1999999999999993, &#39;三傻大闹宝莱坞&#39;],
+ [529473, 9.1999999999999993, &#39;忠犬八公的故事&#39;],
+ [513071, 9.1999999999999993, &#39;放牛班的春天&#39;],
+ [561091, 9.1999999999999993, &#39;大话西游之大圣娶亲&#39;],
+ [533017, 9.0999999999999996, &#39;楚门的世界&#39;],
+ [473631, 9.0999999999999996, &#39;龙猫&#39;],
+ [385130, 9.1999999999999993, &#39;教父&#39;],
+ [309138, 9.1999999999999993, &#39;熔炉&#39;],
+ [560855, 9.1999999999999993, &#39;星际穿越&#39;],
+ [299301, 9.1999999999999993, &#39;乱世佳人&#39;],
+ [416073, 9.0999999999999996, &#39;触不可及&#39;],
+ [458107, 9.0, &#39;无间道&#39;],
+ [606767, 8.9000000000000004, &#39;当幸福来敲门&#39;],
+ [337952, 9.0999999999999996, &#39;天堂电影院&#39;],
+ [633995, 8.9000000000000004, &#39;怦然心动&#39;],
+ [190977, 9.4000000000000004, &#39;十二怒汉&#39;],
+ [434420, 9.0, &#39;搏击俱乐部&#39;],
+ [640800, 9.0, &#39;少年派的奇幻漂流&#39;],
+ [260089, 9.1999999999999993, &#39;鬼子来了&#39;],
+ [367866, 9.0999999999999996, &#39;蝙蝠侠：黑暗骑士&#39;],
+ [314885, 9.0999999999999996, &#39;指环王3：王者无敌&#39;],
+ [306344, 9.0999999999999996, &#39;活着&#39;],
+ [369956, 9.0, &#39;天空之城&#39;],
+ [585740, 9.1999999999999993, &#39;疯狂动物城&#39;],
+ [426150, 8.9000000000000004, &#39;罗马假日&#39;],
+ [451703, 8.9000000000000004, &#39;大话西游之月光宝盒&#39;],
+ [554642, 8.9000000000000004, &#39;飞屋环游记&#39;],
+ [249586, 9.0999999999999996, &#39;窃听风暴&#39;],
+ [296760, 9.0999999999999996, &#39;两杆大烟枪&#39;],
+ [111737, 9.5999999999999996, &#39;控方证人&#39;],
+ [301329, 9.0, &#39;飞越疯人院&#39;],
+ [358755, 8.9000000000000004, &#39;闻香识女人&#39;],
+ [393556, 8.9000000000000004, &#39;哈尔的移动城堡&#39;],
+ [196094, 9.3000000000000007, &#39;海豚湾&#39;],
+ [464601, 8.8000000000000007, &#39;V字仇杀队&#39;],
+ [237421, 9.0999999999999996, &#39;辩护人&#39;],
+ [309071, 9.0, &#39;死亡诗社&#39;],
+ [207619, 9.0999999999999996, &#39;教父2&#39;],
+ [333942, 8.9000000000000004, &#39;美丽心灵&#39;],
+ [296196, 9.0, &#39;指环王2：双塔奇兵&#39;],
+ [331529, 8.9000000000000004, &#39;指环王1：魔戒再现&#39;],
+ [411534, 8.8000000000000007, &#39;情书&#39;],
+ [223469, 9.0999999999999996, &#39;饮食男女&#39;],
+ [517803, 9.0999999999999996, &#39;摔跤吧！爸爸&#39;],
+ [191667, 9.0999999999999996, &#39;美国往事&#39;],
+ [309325, 8.9000000000000004, &#39;狮子王&#39;],
+ [220420, 9.0, &#39;钢琴家&#39;],
+ [520325, 8.6999999999999993, &#39;天使爱美丽&#39;],
+ [205704, 9.0999999999999996, &#39;素媛&#39;],
+ [469032, 8.6999999999999993, &#39;七宗罪&#39;],
+ [153673, 9.1999999999999993, &#39;小鞋子&#39;],
+ [320506, 8.9000000000000004, &#39;被嫌弃的松子的一生&#39;],
+ [375951, 8.8000000000000007, &#39;致命魔术&#39;],
+ [378652, 8.8000000000000007, &#39;看不见的客人&#39;],
+ [251308, 8.9000000000000004, &#39;音乐之声&#39;],
+ [315215, 8.8000000000000007, &#39;勇敢的心&#39;],
+ [523686, 8.6999999999999993, &#39;剪刀手爱德华&#39;],
+ [425844, 8.8000000000000007, &#39;本杰明·巴顿奇事&#39;],
+ [365086, 8.8000000000000007, &#39;低俗小说&#39;],
+ [385562, 8.6999999999999993, &#39;西西里的美丽传说&#39;],
+ [307307, 8.8000000000000007, &#39;黑客帝国&#39;],
+ [262404, 8.9000000000000004, &#39;拯救大兵瑞恩&#39;],
+ [383825, 8.6999999999999993, &#39;沉默的羔羊&#39;],
+ [338488, 8.8000000000000007, &#39;入殓师&#39;],
+ [414361, 8.6999999999999993, &#39;蝴蝶效应&#39;],
+ [677352, 8.6999999999999993, &#39;让子弹飞&#39;],
+ [270494, 8.8000000000000007, &#39;春光乍泄&#39;],
+ [244643, 8.9000000000000004, &#39;玛丽和马克思&#39;],
+ [111733, 9.1999999999999993, &#39;大闹天宫&#39;],
+ [295606, 8.8000000000000007, &#39;心灵捕手&#39;],
+ [189568, 8.9000000000000004, &#39;末代皇帝&#39;],
+ [292721, 8.8000000000000007, &#39;阳光灿烂的日子&#39;],
+ [254400, 8.8000000000000007, &#39;幽灵公主&#39;],
+ [252833, 8.8000000000000007, &#39;第六感&#39;],
+ [359281, 8.6999999999999993, &#39;重庆森林&#39;],
+ [389844, 8.6999999999999993, &#39;禁闭岛&#39;],
+ [345885, 8.8000000000000007, &#39;布达佩斯大饭店&#39;],
+ [271656, 8.6999999999999993, &#39;大鱼&#39;],
+ [142601, 9.0, &#39;狩猎&#39;],
+ [284871, 8.6999999999999993, &#39;哈利·波特与魔法石&#39;],
+ [296911, 8.6999999999999993, &#39;射雕英雄传之东成西就&#39;],
+ [344355, 8.5999999999999996, &#39;致命ID&#39;],
+ [248165, 8.8000000000000007, &#39;甜蜜蜜&#39;],
+ [344588, 8.5999999999999996, &#39;断背山&#39;],
+ [251749, 8.6999999999999993, &#39;猫鼠游戏&#39;],
+ [166973, 8.9000000000000004, &#39;一一&#39;],
+ [367791, 8.6999999999999993, &#39;告白&#39;],
+ [289385, 8.8000000000000007, &#39;阳光姐妹淘&#39;],
+ [373118, 8.5999999999999996, &#39;加勒比海盗&#39;],
+ [166903, 8.9000000000000004, &#39;上帝之城&#39;],
+ [97659, 9.1999999999999993, &#39;摩登时代&#39;],
+ [162190, 8.9000000000000004, &#39;穿条纹睡衣的男孩&#39;],
+ [565530, 8.5999999999999996, &#39;阿凡达&#39;],
+ [237864, 8.6999999999999993, &#39;爱在黎明破晓前&#39;],
+ [385266, 8.6999999999999993, &#39;消失的爱人&#39;],
+ [188690, 8.8000000000000007, &#39;风之谷&#39;],
+ [212467, 8.6999999999999993, &#39;爱在日落黄昏时&#39;],
+ [181917, 8.8000000000000007, &#39;侧耳倾听&#39;],
+ [275127, 8.5999999999999996, &#39;倩女幽魂&#39;],
+ [146507, 8.9000000000000004, &#39;红辣椒&#39;],
+ [241887, 8.6999999999999993, &#39;恐怖直播&#39;],
+ [185888, 8.8000000000000007, &#39;超脱&#39;],
+ [217398, 8.6999999999999993, &#39;萤火虫之墓&#39;],
+ [304866, 8.6999999999999993, &#39;驯龙高手&#39;],
+ [239308, 8.5999999999999996, &#39;幸福终点站&#39;],
+ [195650, 8.6999999999999993, &#39;菊次郎的夏天&#39;],
+ [144405, 8.9000000000000004, &#39;小森林 夏秋篇&#39;],
+ [341432, 8.5, &#39;喜剧之王&#39;],
+ [323425, 8.5999999999999996, &#39;岁月神偷&#39;],
+ [232077, 8.6999999999999993, &#39;借东西的小人阿莉埃蒂&#39;],
+ [82623, 9.1999999999999993, &#39;七武士&#39;],
+ [405200, 8.5, &#39;神偷奶爸&#39;],
+ [222549, 8.6999999999999993, &#39;杀人回忆&#39;],
+ [102681, 9.0, &#39;海洋&#39;],
+ [332455, 8.5, &#39;真爱至上&#39;],
+ [210611, 8.6999999999999993, &#39;电锯惊魂&#39;],
+ [415291, 8.5, &#39;贫民窟的百万富翁&#39;],
+ [191225, 8.6999999999999993, &#39;谍影重重3&#39;],
+ [149579, 8.8000000000000007, &#39;喜宴&#39;],
+ [266681, 8.5999999999999996, &#39;东邪西毒&#39;],
+ [295660, 8.5, &#39;记忆碎片&#39;],
+ [220414, 8.5999999999999996, &#39;雨人&#39;],
+ [257769, 8.5999999999999996, &#39;怪兽电力公司&#39;],
+ [440539, 8.5, &#39;黑天鹅&#39;],
+ [391224, 8.6999999999999993, &#39;疯狂原始人&#39;],
+ [179698, 8.6999999999999993, &#39;英雄本色&#39;],
+ [154659, 8.6999999999999993, &#39;燃情岁月&#39;],
+ [127219, 8.8000000000000007, &#39;卢旺达饭店&#39;],
+ [112345, 8.9000000000000004, &#39;虎口脱险&#39;],
+ [189074, 8.6999999999999993, &#39;7号房的礼物&#39;],
+ [300454, 8.5, &#39;恋恋笔记本&#39;],
+ [125724, 8.9000000000000004, &#39;小森林 冬春篇&#39;],
+ [320997, 8.5, &#39;傲慢与偏见&#39;],
+ [208380, 8.5999999999999996, &#39;海边的曼彻斯特&#39;],
+ [290089, 8.6999999999999993, &#39;哈利·波特与死亡圣器(下)&#39;],
+ [168987, 8.6999999999999993, &#39;萤火之森&#39;],
+ [138798, 8.8000000000000007, &#39;教父3&#39;],
+ [86319, 9.0, &#39;完美的世界&#39;],
+ [156471, 8.6999999999999993, &#39;纵横四海&#39;],
+ [151799, 8.8000000000000007, &#39;荒蛮故事&#39;],
+ [105774, 8.8000000000000007, &#39;二十二&#39;],
+ [135526, 8.8000000000000007, &#39;魂断蓝桥&#39;],
+ [259388, 8.5, &#39;猜火车&#39;],
+ [194663, 8.5999999999999996, &#39;穿越时空的少女&#39;],
+ [201714, 8.8000000000000007, &#39;玩具总动员3&#39;],
+ [260957, 8.5, &#39;花样年华&#39;],
+ [97486, 9.0, &#39;雨中曲&#39;],
+ [183786, 8.5999999999999996, &#39;心迷宫&#39;],
+ [214531, 8.5999999999999996, &#39;时空恋旅人&#39;],
+ [351836, 8.4000000000000004, &#39;唐伯虎点秋香&#39;],
+ [392857, 8.5999999999999996, &#39;超能陆战队&#39;],
+ [110358, 8.8000000000000007, &#39;我是山姆&#39;],
+ [309924, 8.5999999999999996, &#39;蝙蝠侠：黑暗骑士崛起&#39;],
+ [199924, 8.5999999999999996, &#39;人工智能&#39;],
+ [139242, 8.6999999999999993, &#39;浪潮&#39;],
+ [285601, 8.4000000000000004, &#39;冰川时代&#39;],
+ [289504, 8.4000000000000004, &#39;香水&#39;],
+ [288650, 8.5, &#39;朗读者&#39;],
+ [132226, 8.6999999999999993, &#39;罗生门&#39;],
+ [174301, 8.8000000000000007, &#39;请以你的名字呼唤我&#39;],
+ [251364, 8.5999999999999996, &#39;爆裂鼓手&#39;],
+ [85770, 8.9000000000000004, &#39;追随&#39;],
+ [138571, 8.6999999999999993, &#39;一次别离&#39;],
+ [104317, 8.8000000000000007, &#39;未麻的部屋&#39;],
+ [181166, 8.5999999999999996, &#39;撞车&#39;],
+ [334741, 8.6999999999999993, &#39;血战钢锯岭&#39;],
+ [135259, 8.6999999999999993, &#39;可可西里&#39;],
+ [182221, 8.5, &#39;战争之王&#39;],
+ [343703, 8.3000000000000007, &#39;恐怖游轮&#39;],
+ [89868, 8.8000000000000007, &#39;地球上的星星&#39;],
+ [116667, 8.6999999999999993, &#39;梦之安魂曲&#39;],
+ [176988, 8.6999999999999993, &#39;达拉斯买家俱乐部&#39;],
+ [270993, 8.5999999999999996, &#39;被解救的姜戈&#39;],
+ [192717, 8.5, &#39;阿飞正传&#39;],
+ [112326, 8.6999999999999993, &#39;牯岭街少年杀人事件&#39;],
+ [200329, 8.5, &#39;谍影重重&#39;],
+ [166328, 8.5, &#39;谍影重重2&#39;],
+ [204653, 8.5, &#39;魔女宅急便&#39;],
+ [240090, 8.6999999999999993, &#39;头脑特工队&#39;],
+ [164479, 8.8000000000000007, &#39;房间&#39;],
+ [63374, 9.0, &#39;忠犬八公物语&#39;],
+ [87474, 8.9000000000000004, &#39;惊魂记&#39;],
+ [110499, 8.6999999999999993, &#39;碧海蓝天&#39;],
+ [179269, 8.5, &#39;再次出发之纽约遇见你&#39;],
+ [231647, 8.4000000000000004, &#39;青蛇&#39;],
+ [157071, 8.5999999999999996, &#39;小萝莉的猴神大叔&#39;],
+ [53476, 9.1999999999999993, &#39;东京物语&#39;],
+ [312322, 8.3000000000000007, &#39;秒速5厘米&#39;],
+ [84575, 8.9000000000000004, &#39;哪吒闹海&#39;],
+ [109454, 8.6999999999999993, &#39;末路狂花&#39;],
+ [169778, 8.5999999999999996, &#39;海盗电台&#39;],
+ [111040, 8.6999999999999993, &#39;绿里奇迹&#39;],
+ [147035, 8.5999999999999996, &#39;终结者2：审判日&#39;],
+ [424177, 8.3000000000000007, &#39;源代码&#39;],
+ [267159, 8.5999999999999996, &#39;模仿游戏&#39;],
+ [192005, 8.5, &#39;新龙门客栈&#39;],
+ [162903, 8.5, &#39;黑客帝国3：矩阵革命&#39;],
+ [147043, 8.5, &#39;勇闯夺命岛&#39;],
+ [189831, 8.5, &#39;这个男人来自地球&#39;],
+ [125973, 8.6999999999999993, &#39;一个叫欧维的男人决定去死&#39;],
+ [129304, 8.5999999999999996, &#39;卡萨布兰卡&#39;],
+ [494602, 8.4000000000000004, &#39;你的名字。&#39;],
+ [46323, 9.1999999999999993, &#39;城市之光&#39;],
+ [221714, 8.4000000000000004, &#39;变脸&#39;],
+ [132083, 8.5999999999999996, &#39;荒野生存&#39;],
+ [53099, 9.0999999999999996, &#39;迁徙的鸟&#39;],
+ [159426, 8.5, &#39;E.T. 外星人&#39;],
+ [192409, 8.4000000000000004, &#39;发条橙&#39;],
+ [231469, 8.4000000000000004, &#39;无耻混蛋&#39;],
+ [479894, 8.3000000000000007, &#39;初恋这件小事&#39;],
+ [53709, 9.0999999999999996, &#39;黄金三镖客&#39;],
+ [191992, 8.4000000000000004, &#39;美国丽人&#39;],
+ [121427, 8.8000000000000007, &#39;爱在午夜降临前&#39;],
+ [178607, 8.4000000000000004, &#39;英国病人&#39;],
+ [60049, 9.0, &#39;无人知晓&#39;],
+ [110300, 8.5999999999999996, &#39;燕尾蝶&#39;],
+ [120585, 8.5999999999999996, &#39;非常嫌疑犯&#39;],
+ [328162, 8.3000000000000007, &#39;疯狂的石头&#39;],
+ [112286, 8.5999999999999996, &#39;叫我第一名&#39;],
+ [90201, 8.9000000000000004, &#39;勇士&#39;],
+ [242926, 8.3000000000000007, &#39;穆赫兰道&#39;],
+ [190730, 8.5999999999999996, &#39;无敌破坏王&#39;],
+ [352129, 8.3000000000000007, &#39;国王的演讲&#39;],
+ [77399, 8.8000000000000007, &#39;步履不停&#39;],
+ [137843, 8.5, &#39;血钻&#39;],
+ [99101, 8.5999999999999996, &#39;上帝也疯狂&#39;],
+ [186988, 8.4000000000000004, &#39;彗星来的那一夜&#39;],
+ [103282, 8.5999999999999996, &#39;枪火&#39;],
+ [278772, 8.3000000000000007, &#39;蓝色大门&#39;],
+ [97025, 8.5999999999999996, &#39;大卫·戈尔的一生&#39;],
+ [134046, 8.5, &#39;遗愿清单&#39;],
+ [59825, 9.0, &#39;我爱你&#39;],
+ [89377, 8.6999999999999993, &#39;千钧一发&#39;],
+ [139223, 8.5, &#39;荒岛余生&#39;],
+ [48744, 9.0, &#39;爱·回家&#39;],
+ [119390, 8.5, &#39;黑鹰坠落&#39;],
+ [131277, 8.8000000000000007, &#39;聚焦&#39;],
+ [131618, 8.5, &#39;麦兜故事&#39;],
+ [148685, 8.4000000000000004, &#39;暖暖内含光&#39;]]</pre>
 </div>
 
 </div>
@@ -15395,7 +15748,7 @@ https://movie.douban.com/top250?start=225&amp;filter=
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[70]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span>    
@@ -15414,7 +15767,7 @@ https://movie.douban.com/top250?start=225&amp;filter=
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[20]:</div>
+<div class="prompt output_prompt">Out[70]:</div>
 
 
 

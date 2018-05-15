@@ -11906,10 +11906,10 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib</span> <span class="kn">as</span> <span class="nn">mpl</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span> <span class="k">as</span> <span class="nn">mpl</span>
 </pre></div>
 
 </div>
@@ -11930,7 +11930,7 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">bigfile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;/Users/chengjun/百度云同步盘/Writing/OWS/ows-raw.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">bigfile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;/Users/chengjun/百度云同步盘/Writing/OWS/ows-raw.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span>
 <span class="n">chunkSize</span> <span class="o">=</span> <span class="mi">10000000</span>
 <span class="n">chunk</span> <span class="o">=</span> <span class="n">bigfile</span><span class="o">.</span><span class="n">readlines</span><span class="p">(</span><span class="n">chunkSize</span><span class="p">)</span>
 <span class="n">block</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
@@ -11966,7 +11966,7 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[120]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">defaultdict</span>
 <span class="kn">import</span> <span class="nn">csv</span>
 
 <span class="n">data_dict</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
@@ -11992,7 +11992,7 @@ a.anchor-link {
         <span class="k">except</span><span class="p">:</span>
             <span class="k">pass</span>
     <span class="n">chunk</span> <span class="o">=</span> <span class="n">bigfile</span><span class="o">.</span><span class="n">readlines</span><span class="p">(</span><span class="n">chunkSize</span><span class="p">)</span>
-<span class="k">print</span> <span class="n">line_num</span><span class="p">,</span> <span class="n">total_num</span><span class="p">,</span> <span class="n">error_num</span>
+<span class="nb">print</span> <span class="n">line_num</span><span class="p">,</span> <span class="n">total_num</span><span class="p">,</span> <span class="n">error_num</span>
 </pre></div>
 
 </div>
@@ -12039,7 +12039,7 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[121]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="s2">&quot; , &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="s2">&quot; , &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
 </pre></div>
 
 </div>
@@ -12080,7 +12080,7 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[123]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
 <span class="n">data</span> <span class="o">=</span> <span class="p">[[</span><span class="n">i</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_dict</span><span class="p">[</span><span class="n">i</span><span class="p">]),</span> <span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">data_dict</span><span class="p">[</span><span class="n">i</span><span class="p">]))]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">data_dict</span><span class="p">]</span>
 <span class="n">dat</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">,</span> <span class="s1">&#39;tweets&#39;</span><span class="p">,</span> <span class="s1">&#39;users&#39;</span><span class="p">])</span>
@@ -12098,7 +12098,7 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[126]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">dat</span><span class="o">.</span><span class="n">tweets</span><span class="p">)</span>
 </pre></div>
 
@@ -12132,7 +12132,7 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[127]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">dat</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dat</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -12216,9 +12216,9 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[196]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
-<span class="kn">import</span> <span class="nn">matplotlib.cm</span> <span class="kn">as</span> <span class="nn">cm</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="kn">import</span> <span class="nn">matplotlib.cm</span> <span class="k">as</span> <span class="nn">cm</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
 <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
 
@@ -12923,7 +12923,7 @@ hJBKjhI7QgghhBBCCKnkKLEjhBBCCCGEkEru/wEvWCVBTnW69wAAAABJRU5ErkJggg==
 <div class="prompt input_prompt">In&nbsp;[277]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">dat</span><span class="o">.</span><span class="n">tweets</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">dat</span><span class="o">.</span><span class="n">tweets</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">dat</span><span class="o">.</span><span class="n">users</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;g&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
@@ -13041,8 +13041,8 @@ yPCXpAIZ/pJUIMNfkgr0/6nrUskRgsvTAAAAAElFTkSuQmCC
 <div class="prompt input_prompt">In&nbsp;[276]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">n</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">patches</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="n">dat</span><span class="o">.</span><span class="n">tweets</span><span class="p">),</span><span class="mi">10</span><span class="p">,</span><span class="n">normed</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
-<span class="n">n</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">patches</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="n">dat</span><span class="o">.</span><span class="n">users</span><span class="p">),</span><span class="mi">10</span><span class="p">,</span><span class="n">normed</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">patches</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="n">dat</span><span class="o">.</span><span class="n">tweets</span><span class="p">),</span><span class="mi">10</span><span class="p">,</span><span class="n">normed</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="n">n</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">patches</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="n">dat</span><span class="o">.</span><span class="n">users</span><span class="p">),</span><span class="mi">10</span><span class="p">,</span><span class="n">normed</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -13167,7 +13167,7 @@ Fej/AecRNgr/UhcpAAAAAElFTkSuQmCC
 <div class="prompt input_prompt">In&nbsp;[335]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib.font_manager</span> <span class="kn">import</span> <span class="n">FontProperties</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib.font_manager</span> <span class="k">import</span> <span class="n">FontProperties</span>
 <span class="n">font</span> <span class="o">=</span> <span class="n">FontProperties</span><span class="p">(</span><span class="n">fname</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;/Users/chengjun/github/cjc2016/data/msyh.ttf&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span> 
 
 <span class="n">histo</span><span class="p">,</span> <span class="n">bin_edges</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">histogram</span><span class="p">(</span><span class="n">dat</span><span class="o">.</span><span class="n">tweets</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
@@ -13306,9 +13306,9 @@ JKmIQSJJKvL/AZIX7ACkKCP3AAAAAElFTkSuQmCC
 <div class="prompt input_prompt">In&nbsp;[358]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="kn">as</span> <span class="nn">sm</span>
-<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">defaultdict</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
 <span class="k">def</span> <span class="nf">powerPlot</span><span class="p">(</span><span class="n">d_value</span><span class="p">,</span> <span class="n">d_freq</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">marker</span><span class="p">):</span>
     <span class="n">d_freq</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">d_freq</span><span class="p">]</span>
@@ -13316,7 +13316,7 @@ JKmIQSJJKvL/AZIX7ACkKCP3AAAAAElFTkSuQmCC
     <span class="c1">#d_rank = ss.rankdata(d_value).astype(int)</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">d_value</span><span class="p">)</span>
     <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">d_prob</span><span class="p">)</span>
-    <span class="n">xx</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">add_constant</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">prepend</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="n">xx</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">add_constant</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">prepend</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     <span class="n">res</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="p">(</span><span class="n">y</span><span class="p">,</span><span class="n">xx</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
     <span class="n">constant</span><span class="p">,</span><span class="n">beta</span> <span class="o">=</span> <span class="n">res</span><span class="o">.</span><span class="n">params</span>
     <span class="n">r2</span> <span class="o">=</span> <span class="n">res</span><span class="o">.</span><span class="n">rsquared</span>
@@ -13337,7 +13337,7 @@ JKmIQSJJKvL/AZIX7ACkKCP3AAAAAElFTkSuQmCC
 <div class="prompt input_prompt">In&nbsp;[359]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
 <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">histo</span><span class="p">,</span> <span class="n">bin_edges</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">histogram</span><span class="p">(</span><span class="n">dat</span><span class="o">.</span><span class="n">tweets</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
 <span class="n">bin_center</span> <span class="o">=</span> <span class="mf">0.5</span><span class="o">*</span><span class="p">(</span><span class="n">bin_edges</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="o">+</span> <span class="n">bin_edges</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
@@ -13703,7 +13703,7 @@ TOaIiIiIVIzJHBEREZGKMZkjIiIiUjEmc0REREQq9v+cyCBmTWlhUgAAAABJRU5ErkJggg==
 <div class="prompt input_prompt">In&nbsp;[250]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">week</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">dat</span><span class="o">.</span><span class="n">date</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">week</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">dat</span><span class="o">.</span><span class="n">date</span><span class="p">))</span>
 <span class="n">week</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span><span class="o">/</span><span class="mi">7</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">week</span><span class="p">]</span>
 </pre></div>
 
@@ -13717,7 +13717,7 @@ TOaIiIiIVIzJHBEREZGKMZkjIiIiUjEmc0REREQq9v+cyCBmTWlhUgAAAABJRU5ErkJggg==
 <div class="prompt input_prompt">In&nbsp;[251]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
 <span class="n">cmap</span> <span class="o">=</span> <span class="n">cm</span><span class="o">.</span><span class="n">get_cmap</span><span class="p">(</span><span class="s1">&#39;rainbow_r&#39;</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">week</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">week</span><span class="p">):</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">dat</span><span class="o">.</span><span class="n">users</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">dat</span><span class="o">.</span><span class="n">tweets</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">color</span> <span class="o">=</span> <span class="n">cmap</span><span class="p">(</span><span class="n">j</span><span class="p">),</span> <span class="n">marker</span> <span class="o">=</span> <span class="s1">&#39;o&#39;</span><span class="p">)</span>
@@ -13977,12 +13977,12 @@ FxER8XP/D6DzqMayhFeUAAAAAElFTkSuQmCC
 <div class="prompt input_prompt">In&nbsp;[264]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="kn">as</span> <span class="nn">sm</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
 <span class="n">cmap</span> <span class="o">=</span> <span class="n">cm</span><span class="o">.</span><span class="n">get_cmap</span><span class="p">(</span><span class="s1">&#39;rainbow_r&#39;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">dat</span><span class="o">.</span><span class="n">date</span><span class="p">))</span>
 
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">dat</span><span class="o">.</span><span class="n">users</span><span class="p">)</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">dat</span><span class="o">.</span><span class="n">tweets</span><span class="p">)</span>
-<span class="n">xx</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">add_constant</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">prepend</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">xx</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">add_constant</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">prepend</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">res</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="p">(</span><span class="n">y</span><span class="p">,</span><span class="n">xx</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
 <span class="n">constant</span><span class="p">,</span><span class="n">beta</span> <span class="o">=</span> <span class="n">res</span><span class="o">.</span><span class="n">params</span>
 <span class="n">r2</span> <span class="o">=</span> <span class="n">res</span><span class="o">.</span><span class="n">rsquared</span>
@@ -14356,7 +14356,7 @@ twitter-text-py.</p>
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
 <span class="kn">import</span> <span class="nn">twitter_text</span> <span class="c1">#pip install twitter-text-py</span>
 
 <span class="n">tweet</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;RT @AnonKitsu: ALERT!!!!!!!!!!COPS ARE KETTLING PROTESTERS IN PARK W HELICOPTERS AND PADDYWAGONS!!!! </span>
@@ -14376,7 +14376,7 @@ twitter-text-py.</p>
 <span class="n">urls</span> <span class="o">=</span> <span class="n">ex</span><span class="o">.</span><span class="n">extract_urls</span><span class="p">()</span>
 <span class="n">hashtags</span> <span class="o">=</span> <span class="n">ex</span><span class="o">.</span><span class="n">extract_hashtags</span><span class="p">()</span>
 <span class="n">rt_user</span> <span class="o">=</span> <span class="n">extract_rt_user</span><span class="p">(</span><span class="n">tweet</span><span class="p">)</span>
-<span class="k">print</span> <span class="n">at_names</span><span class="p">,</span> <span class="n">urls</span><span class="p">,</span> <span class="n">hashtags</span><span class="p">,</span> <span class="n">rt_user</span>
+<span class="nb">print</span> <span class="n">at_names</span><span class="p">,</span> <span class="n">urls</span><span class="p">,</span> <span class="n">hashtags</span><span class="p">,</span> <span class="n">rt_user</span>
 </pre></div>
 
 </div>
@@ -14416,7 +14416,7 @@ twitter-text-py.</p>
 <div class="prompt input_prompt">In&nbsp;[82]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">cleanTweet</span><span class="p">(</span><span class="n">tweet</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">cleanTweet</span><span class="p">(</span><span class="n">tweet</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;replace symbols, return word list&#39;&#39;&#39;</span>
     <span class="c1">#print tweet</span>
     <span class="n">tweet</span> <span class="o">=</span> <span class="n">tweet</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> 
@@ -14448,9 +14448,9 @@ twitter-text-py.</p>
 <div class="prompt input_prompt">In&nbsp;[83]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
 <span class="kn">import</span> <span class="nn">twitter_text</span> <span class="c1">#pip install twitter-text-py</span>
-<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">defaultdict</span>
 <span class="kn">import</span> <span class="nn">csv</span>
 
 <span class="n">data_dict</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
@@ -14462,7 +14462,7 @@ twitter-text-py.</p>
     <span class="n">tweet</span> <span class="o">=</span> <span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
     <span class="k">if</span> <span class="n">tweet</span> <span class="o">!=</span> <span class="s1">&#39;Text&#39;</span><span class="p">:</span>
         <span class="n">tweet</span> <span class="o">=</span> <span class="n">cleanTweet</span><span class="p">(</span><span class="n">tweet</span><span class="p">)</span>
-        <span class="k">print</span> <span class="n">tweet</span>
+        <span class="nb">print</span> <span class="n">tweet</span>
 </pre></div>
 
 </div>
@@ -14501,9 +14501,9 @@ twitter-text-py.</p>
 <div class="prompt input_prompt">In&nbsp;[84]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">lines</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">((</span><span class="n">line</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\x00</span><span class="s1">&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">chunk</span><span class="p">),</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">quotechar</span><span class="o">=</span><span class="s1">&#39;&quot;&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lines</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">((</span><span class="n">line</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\x00</span><span class="s1">&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">chunk</span><span class="p">),</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">quotechar</span><span class="o">=</span><span class="s1">&#39;&quot;&#39;</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
-    <span class="k">print</span> <span class="n">i</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">cleanTweet</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="nb">print</span> <span class="n">i</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">cleanTweet</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -14578,7 +14578,7 @@ twitter-text-py.</p>
 <div class="prompt input_prompt">In&nbsp;[85]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">defaultdict</span>
 <span class="kn">import</span> <span class="nn">csv</span>
 
 <span class="kn">import</span> <span class="nn">sys</span>
@@ -14614,7 +14614,7 @@ twitter-text-py.</p>
         <span class="k">except</span><span class="p">:</span>
             <span class="k">pass</span>
     <span class="n">chunk</span> <span class="o">=</span> <span class="n">bigfile</span><span class="o">.</span><span class="n">readlines</span><span class="p">(</span><span class="n">chunkSize</span><span class="p">)</span>
-<span class="k">print</span> <span class="n">line_num</span><span class="p">,</span> <span class="n">total_num</span><span class="p">,</span> <span class="n">error_num</span>
+<span class="nb">print</span> <span class="n">line_num</span><span class="p">,</span> <span class="n">total_num</span><span class="p">,</span> <span class="n">error_num</span>
 </pre></div>
 
 </div>
@@ -14645,7 +14645,7 @@ twitter-text-py.</p>
 <div class="prompt input_prompt">In&nbsp;[89]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">data_dict</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">data_dict</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -14678,7 +14678,7 @@ twitter-text-py.</p>
 <div class="prompt input_prompt">In&nbsp;[93]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">data_dict</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">data_dict</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -14711,7 +14711,7 @@ twitter-text-py.</p>
 <div class="prompt input_prompt">In&nbsp;[90]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">data_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -14744,7 +14744,7 @@ twitter-text-py.</p>
 <div class="prompt input_prompt">In&nbsp;[91]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">data_dict</span><span class="p">[</span><span class="sa">u</span><span class="s1">&#39;wooda&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data_dict</span><span class="p">[</span><span class="sa">u</span><span class="s1">&#39;wooda&#39;</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -14777,7 +14777,7 @@ twitter-text-py.</p>
 <div class="prompt input_prompt">In&nbsp;[95]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;/Users/chengjun/百度云同步盘/Writing/OWS/term_vectors.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">data_dict</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
 </pre></div>
@@ -14800,7 +14800,7 @@ twitter-text-py.</p>
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
 <span class="kn">import</span> <span class="nn">twitter_text</span> <span class="c1">#pip install twitter-text-py</span>
 <span class="kn">import</span> <span class="nn">csv</span>
 <span class="kn">import</span> <span class="nn">sys</span>
@@ -14829,7 +14829,7 @@ twitter-text-py.</p>
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">defaultdict</span>
 <span class="kn">import</span> <span class="nn">csv</span>
 
 <span class="n">bigfile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;/Users/chengjun/百度云同步盘/Writing/OWS/ows-clean.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span>
@@ -14876,10 +14876,10 @@ twitter-text-py.</p>
             <span class="k">else</span><span class="p">:</span>
                 <span class="n">error_num</span><span class="o">+=</span><span class="mi">1</span>
         <span class="k">except</span> <span class="ne">Exception</span><span class="p">,</span> <span class="n">e</span><span class="p">:</span>
-            <span class="k">print</span> <span class="n">e</span>
+            <span class="nb">print</span> <span class="n">e</span>
             <span class="k">pass</span>
     <span class="n">chunk</span> <span class="o">=</span> <span class="n">bigfile</span><span class="o">.</span><span class="n">readlines</span><span class="p">(</span><span class="n">chunkSize</span><span class="p">)</span>
-<span class="k">print</span> <span class="n">line_num</span><span class="p">,</span>  <span class="n">error_num</span>
+<span class="nb">print</span> <span class="n">line_num</span><span class="p">,</span>  <span class="n">error_num</span>
 </pre></div>
 
 </div>
@@ -14910,12 +14910,12 @@ twitter-text-py.</p>
 <div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;/Users/chengjun/百度云同步盘/Writing/OWS/ows-clean.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;/Users/chengjun/百度云同步盘/Writing/OWS/ows-clean.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
     
 <span class="n">lines</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">((</span><span class="n">line</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\x00</span><span class="s1">&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">),</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">quotechar</span><span class="o">=</span><span class="s1">&#39;&quot;&#39;</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
-    <span class="k">print</span> <span class="n">i</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span>
+    <span class="nb">print</span> <span class="n">i</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -14969,7 +14969,7 @@ twitter-text-py.</p>
 <div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">usertag_dict</span> <span class="o">=</span>  <span class="n">defaultdict</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">usertag_dict</span> <span class="o">=</span>  <span class="n">defaultdict</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">))</span>
 <span class="n">usertag_dict</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 <span class="n">usertag_dict</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
 
@@ -15006,7 +15006,7 @@ twitter-text-py.</p>
 <div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">defaultdict</span>
 <span class="kn">import</span> <span class="nn">csv</span>
 
 <span class="n">bigfile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;/Users/chengjun/百度云同步盘/Writing/OWS/ows-clean.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span>
@@ -15036,10 +15036,10 @@ twitter-text-py.</p>
             <span class="k">else</span><span class="p">:</span>
                 <span class="n">error_num</span><span class="o">+=</span><span class="mi">1</span>
         <span class="k">except</span> <span class="ne">Exception</span><span class="p">,</span> <span class="n">e</span><span class="p">:</span>
-            <span class="k">print</span> <span class="n">e</span>
+            <span class="nb">print</span> <span class="n">e</span>
             <span class="k">pass</span>
     <span class="n">chunk</span> <span class="o">=</span> <span class="n">bigfile</span><span class="o">.</span><span class="n">readlines</span><span class="p">(</span><span class="n">chunkSize</span><span class="p">)</span>
-<span class="k">print</span> <span class="s1">&#39;--&gt;&#39;</span><span class="p">,</span> <span class="n">line_num</span><span class="p">,</span> <span class="s1">&#39;--&gt;&#39;</span><span class="p">,</span> <span class="n">error_num</span>
+<span class="nb">print</span> <span class="s1">&#39;--&gt;&#39;</span><span class="p">,</span> <span class="n">line_num</span><span class="p">,</span> <span class="s1">&#39;--&gt;&#39;</span><span class="p">,</span> <span class="n">error_num</span>
 
 <span class="kn">import</span> <span class="nn">json</span>
 
@@ -15075,7 +15075,7 @@ twitter-text-py.</p>
 <div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
 
 <span class="c1"># with open(&#39;/Users/chengjun/百度云同步盘/Writing/GithubResearch/data/at_dict.json&#39;, &#39;w&#39;) as f:</span>
 <span class="c1">#     json.dump(at_dict, f)</span>
@@ -15105,7 +15105,7 @@ twitter-text-py.</p>
 <div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">user_dict</span><span class="p">),</span><span class="nb">len</span><span class="p">(</span><span class="n">at_dict</span><span class="p">),</span><span class="nb">len</span><span class="p">(</span><span class="n">rt_dict</span><span class="p">),</span><span class="nb">len</span><span class="p">(</span><span class="n">url_dict</span><span class="p">),</span><span class="nb">len</span><span class="p">(</span><span class="n">tag_dict</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">user_dict</span><span class="p">),</span><span class="nb">len</span><span class="p">(</span><span class="n">at_dict</span><span class="p">),</span><span class="nb">len</span><span class="p">(</span><span class="n">rt_dict</span><span class="p">),</span><span class="nb">len</span><span class="p">(</span><span class="n">url_dict</span><span class="p">),</span><span class="nb">len</span><span class="p">(</span><span class="n">tag_dict</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -15138,7 +15138,7 @@ twitter-text-py.</p>
 <div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
 <span class="n">data_dict</span> <span class="o">=</span> <span class="p">{}</span>
 <span class="k">for</span> <span class="n">u</span> <span class="ow">in</span> <span class="n">user_dict</span><span class="p">:</span>
@@ -15165,7 +15165,7 @@ twitter-text-py.</p>
 <div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
 <span class="n">dat</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data_dict</span><span class="o">.</span><span class="n">values</span><span class="p">(),</span> 
                    <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">,</span>  <span class="s1">&#39;users&#39;</span><span class="p">,</span> <span class="s1">&#39;tweets&#39;</span><span class="p">,</span><span class="s1">&#39;mentionUnique&#39;</span><span class="p">,</span> <span class="s1">&#39;mentions&#39;</span><span class="p">,</span> 
@@ -15202,7 +15202,7 @@ twitter-text-py.</p>
 <div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">dat</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dat</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -15283,7 +15283,7 @@ twitter-text-py.</p>
 <div class="prompt input_prompt">In&nbsp;[72]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">pandas.tools</span> <span class="kn">import</span> <span class="n">plotting</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pandas.tools</span> <span class="k">import</span> <span class="n">plotting</span>
 
 <span class="n">plotting</span><span class="o">.</span><span class="n">scatter_matrix</span><span class="p">(</span><span class="n">dat</span><span class="p">[[</span><span class="s1">&#39;users&#39;</span><span class="p">,</span> <span class="s1">&#39;tweets&#39;</span><span class="p">,</span> <span class="s1">&#39;mentions&#39;</span><span class="p">,</span><span class="s1">&#39;retweets&#39;</span><span class="p">,</span> <span class="s1">&#39;urls&#39;</span><span class="p">,</span> <span class="s1">&#39;hashtags&#39;</span><span class="p">]],</span> 
                        <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">15</span><span class="p">),</span> <span class="n">diagonal</span><span class="o">=</span><span class="s1">&#39;kde&#39;</span><span class="p">)</span> 
@@ -17001,7 +17001,7 @@ MAzDMAzDMBIc6xgahmEYhmEYhmEkOP8fRnVpTF3D/S4AAAAASUVORK5CYII=
 <div class="prompt input_prompt">In&nbsp;[91]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span>
 
 <span class="n">grid</span> <span class="o">=</span> <span class="n">seaborn</span><span class="o">.</span><span class="n">pairplot</span><span class="p">(</span><span class="n">dat</span><span class="p">,</span> <span class="nb">vars</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;users&#39;</span><span class="p">,</span> <span class="s1">&#39;tweets&#39;</span><span class="p">,</span> <span class="s1">&#39;mentions&#39;</span><span class="p">,</span><span class="s1">&#39;retweets&#39;</span><span class="p">,</span> <span class="s1">&#39;urls&#39;</span><span class="p">,</span> <span class="s1">&#39;hashtags&#39;</span><span class="p">],</span>
                    <span class="n">diag_kind</span><span class="o">=</span><span class="s2">&quot;kde&quot;</span><span class="p">)</span> 
@@ -18368,7 +18368,7 @@ TkSuQmCC
 <div class="prompt input_prompt">In&nbsp;[82]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">dat</span><span class="o">.</span><span class="n">users</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;kde&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dat</span><span class="o">.</span><span class="n">users</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;kde&#39;</span><span class="p">)</span>
 <span class="n">dat</span><span class="o">.</span><span class="n">tweets</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;kde&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span><span class="c1">#;plt.yscale(&#39;log&#39;)</span>
@@ -18688,9 +18688,9 @@ yhhjTMiyJGWMMSZkWZIyxhgTsixJGWOMCVmWpIwxxoQsS1LGGGNCliUpY4wxIcuSlDHGmJD1/3QL
 <div class="prompt input_prompt">In&nbsp;[62]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
-<span class="kn">import</span> <span class="nn">matplotlib.cm</span> <span class="kn">as</span> <span class="nn">cm</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="kn">import</span> <span class="nn">matplotlib.cm</span> <span class="k">as</span> <span class="nn">cm</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
 <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
 <span class="n">cmap</span> <span class="o">=</span> <span class="n">cm</span><span class="o">.</span><span class="n">get_cmap</span><span class="p">(</span><span class="s1">&#39;rainbow_r&#39;</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
@@ -21513,7 +21513,7 @@ AABJRU5ErkJggg==
 <div class="prompt input_prompt">In&nbsp;[157]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">15</span><span class="p">),</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">15</span><span class="p">),</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
 <span class="n">cmap</span> <span class="o">=</span> <span class="n">cm</span><span class="o">.</span><span class="n">get_cmap</span><span class="p">(</span><span class="s1">&#39;rainbow_r&#39;</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
 
 <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">511</span><span class="p">)</span>
@@ -24522,9 +24522,9 @@ EolEIpFIagj/D2jityuB8Q+OAAAAAElFTkSuQmCC
 <div class="prompt input_prompt">In&nbsp;[67]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
-<span class="kn">import</span> <span class="nn">matplotlib.cm</span> <span class="kn">as</span> <span class="nn">cm</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="kn">import</span> <span class="nn">matplotlib.cm</span> <span class="k">as</span> <span class="nn">cm</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
 <span class="n">cmap</span> <span class="o">=</span> <span class="n">cm</span><span class="o">.</span><span class="n">get_cmap</span><span class="p">(</span><span class="s1">&#39;rainbow_r&#39;</span><span class="p">,</span><span class="mi">9</span><span class="p">)</span>
 
@@ -25915,13 +25915,13 @@ RJJhKCUiIiIiIiLJ/D81pp3a+7mMawAAAABJRU5ErkJggg==
 <div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="kn">as</span> <span class="nn">sm</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
 <span class="n">cmap</span> <span class="o">=</span> <span class="n">cm</span><span class="o">.</span><span class="n">get_cmap</span><span class="p">(</span><span class="s1">&#39;rainbow_r&#39;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">dat</span><span class="o">.</span><span class="n">date</span><span class="p">))</span>
 
 <span class="k">def</span> <span class="nf">linearFit</span><span class="p">(</span><span class="n">xi</span><span class="p">,</span> <span class="n">yi</span><span class="p">,</span> <span class="n">var_name</span><span class="p">,</span> <span class="n">color</span><span class="p">):</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">xi</span><span class="p">)</span>
     <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">yi</span><span class="p">)</span>
-    <span class="n">xx</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">add_constant</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">prepend</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="n">xx</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">add_constant</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">prepend</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     <span class="n">res</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="p">(</span><span class="n">y</span><span class="p">,</span><span class="n">xx</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
     <span class="n">constant</span><span class="p">,</span><span class="n">beta</span> <span class="o">=</span> <span class="n">res</span><span class="o">.</span><span class="n">params</span>
     <span class="n">r2</span> <span class="o">=</span> <span class="n">res</span><span class="o">.</span><span class="n">rsquared</span>
@@ -25944,7 +25944,7 @@ RJJhKCUiIiIiIiLJ/D81pp3a+7mMawAAAABJRU5ErkJggg==
 <div class="prompt input_prompt">In&nbsp;[159]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
 <span class="n">cmap</span> <span class="o">=</span> <span class="n">cm</span><span class="o">.</span><span class="n">get_cmap</span><span class="p">(</span><span class="s1">&#39;rainbow_r&#39;</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
 
 <span class="n">linearFit</span><span class="p">(</span><span class="n">dat</span><span class="o">.</span><span class="n">users</span><span class="p">,</span> <span class="n">dat</span><span class="o">.</span><span class="n">tweets</span><span class="p">,</span> <span class="s1">&#39;Tweets&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
@@ -25953,7 +25953,7 @@ RJJhKCUiIiIiIiLJ/D81pp3a+7mMawAAAABJRU5ErkJggg==
 <span class="n">linearFit</span><span class="p">(</span><span class="n">dat</span><span class="o">.</span><span class="n">users</span><span class="p">,</span> <span class="n">dat</span><span class="o">.</span><span class="n">urls</span><span class="p">,</span> <span class="s1">&#39;Urls&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
 <span class="n">linearFit</span><span class="p">(</span><span class="n">dat</span><span class="o">.</span><span class="n">users</span><span class="p">,</span> <span class="n">dat</span><span class="o">.</span><span class="n">hashtags</span><span class="p">,</span> <span class="s1">&#39;Hashtags&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$Activities$&#39;</span><span class="p">,</span> <span class="n">fontsize</span> <span class="o">=</span> <span class="mi">20</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;center left&#39;</span><span class="p">,</span> <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">numpoints</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">frameon</span> <span class="o">=</span> <span class="bp">False</span> <span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;center left&#39;</span><span class="p">,</span> <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">numpoints</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">frameon</span> <span class="o">=</span> <span class="kc">False</span> <span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
@@ -27513,7 +27513,7 @@ rAEAAAAA6AaCNQAAAAAA3UCwBgAAAACgG/4/kIpqufFcH6MAAAAASUVORK5CYII=
 <div class="prompt input_prompt">In&nbsp;[148]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
 <span class="n">cmap</span> <span class="o">=</span> <span class="n">cm</span><span class="o">.</span><span class="n">get_cmap</span><span class="p">(</span><span class="s1">&#39;rainbow_r&#39;</span><span class="p">,</span><span class="mi">9</span><span class="p">)</span>
 
 <span class="n">linearFit</span><span class="p">(</span><span class="n">dat</span><span class="o">.</span><span class="n">users</span><span class="p">,</span> <span class="n">dat</span><span class="o">.</span><span class="n">tweets</span><span class="p">,</span> <span class="s1">&#39;Tweets&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
@@ -27526,7 +27526,7 @@ rAEAAAAA6AaCNQAAAAAA3UCwBgAAAACgG/4/kIpqufFcH6MAAAAASUVORK5CYII=
 <span class="n">linearFit</span><span class="p">(</span><span class="n">dat</span><span class="o">.</span><span class="n">users</span><span class="p">,</span> <span class="n">dat</span><span class="o">.</span><span class="n">urlUnique</span><span class="p">,</span> <span class="s1">&#39;Unique Urls&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="p">(</span><span class="mi">7</span><span class="p">))</span>
 <span class="n">linearFit</span><span class="p">(</span><span class="n">dat</span><span class="o">.</span><span class="n">users</span><span class="p">,</span> <span class="n">dat</span><span class="o">.</span><span class="n">hashtagUnique</span><span class="p">,</span> <span class="s1">&#39;Unique Hashtags&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="p">(</span><span class="mi">8</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$Activities$&#39;</span><span class="p">,</span> <span class="n">fontsize</span> <span class="o">=</span> <span class="mi">20</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;center left&#39;</span><span class="p">,</span> <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">numpoints</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">frameon</span> <span class="o">=</span> <span class="bp">False</span> <span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;center left&#39;</span><span class="p">,</span> <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">numpoints</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">frameon</span> <span class="o">=</span> <span class="kc">False</span> <span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
@@ -29840,10 +29840,10 @@ sQEAAACoKbEBAAAAqKn/Blx14wVxVESmAAAAAElFTkSuQmCC
 <div class="prompt input_prompt">In&nbsp;[151]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">linearFit</span><span class="p">(</span><span class="n">xi</span><span class="p">,</span> <span class="n">yi</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">linearFit</span><span class="p">(</span><span class="n">xi</span><span class="p">,</span> <span class="n">yi</span><span class="p">):</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">xi</span><span class="p">)</span>
     <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">yi</span><span class="p">)</span>
-    <span class="n">xx</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">add_constant</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">prepend</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="n">xx</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">add_constant</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">prepend</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     <span class="n">res</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="p">(</span><span class="n">y</span><span class="p">,</span><span class="n">xx</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
     <span class="n">constant</span><span class="p">,</span><span class="n">beta</span> <span class="o">=</span> <span class="n">res</span><span class="o">.</span><span class="n">params</span>
     <span class="n">r2</span> <span class="o">=</span> <span class="n">res</span><span class="o">.</span><span class="n">rsquared</span>
@@ -29865,7 +29865,7 @@ sQEAAACoKbEBAAAAqKn/Blx14wVxVESmAAAAAElFTkSuQmCC
 <div class="prompt input_prompt">In&nbsp;[152]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
 <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">321</span><span class="p">)</span>
 <span class="n">linearFit</span><span class="p">(</span><span class="n">dat</span><span class="o">.</span><span class="n">users</span><span class="p">,</span> <span class="n">dat</span><span class="o">.</span><span class="n">tweets</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$Tweets$&#39;</span><span class="p">,</span> <span class="n">fontsize</span> <span class="o">=</span> <span class="mi">20</span><span class="p">)</span>
@@ -31158,7 +31158,7 @@ hBBCCCGE6PckOBZCCCGEEEII0e9JcCyEEEIIIYQQot+T4FgIIYQQQgghRL8nwbEQQgghhBBCiH7v
 <div class="prompt input_prompt">In&nbsp;[68]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">chunk</span><span class="p">[</span><span class="mi">41</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">chunk</span><span class="p">[</span><span class="mi">41</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">))</span>
 </pre></div>
 
 </div>

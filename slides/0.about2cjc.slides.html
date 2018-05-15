@@ -11905,9 +11905,9 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#21335;&#20140;&#22823;&#23398;&#26032;&#38395;&#20256;&#25773;&#23398;&#38498;&#30805;&#22763;&#35838;&#31243;">&#21335;&#20140;&#22823;&#23398;&#26032;&#38395;&#20256;&#25773;&#23398;&#38498;&#30805;&#22763;&#35838;&#31243;<a class="anchor-link" href="#&#21335;&#20140;&#22823;&#23398;&#26032;&#38395;&#20256;&#25773;&#23398;&#38498;&#30805;&#22763;&#35838;&#31243;">&#182;</a></h3><hr>
 <hr>
-<h1 id="&#35745;&#31639;&#26032;&#38395;&#20256;&#25773;&#23398;&#65306;&#22823;&#25968;&#25454;&#25366;&#25496;&#19982;&#20998;&#26512;">&#35745;&#31639;&#26032;&#38395;&#20256;&#25773;&#23398;&#65306;&#22823;&#25968;&#25454;&#25366;&#25496;&#19982;&#20998;&#26512;<a class="anchor-link" href="#&#35745;&#31639;&#26032;&#38395;&#20256;&#25773;&#23398;&#65306;&#22823;&#25968;&#25454;&#25366;&#25496;&#19982;&#20998;&#26512;">&#182;</a></h1><h2 id="&#35838;&#31243;&#31616;&#20171;">&#35838;&#31243;&#31616;&#20171;<a class="anchor-link" href="#&#35838;&#31243;&#31616;&#20171;">&#182;</a></h2><hr>
+<hr>
+<h1 id="&#35745;&#31639;&#26032;&#38395;&#20256;&#25773;&#23398;">&#35745;&#31639;&#26032;&#38395;&#20256;&#25773;&#23398;<a class="anchor-link" href="#&#35745;&#31639;&#26032;&#38395;&#20256;&#25773;&#23398;">&#182;</a></h1><h2 id="&#35838;&#31243;&#31616;&#20171;">&#35838;&#31243;&#31616;&#20171;<a class="anchor-link" href="#&#35838;&#31243;&#31616;&#20171;">&#182;</a></h2><hr>
 <hr>
 <p>王成军</p>
 <p>wangchengjun@nju.edu.cn</p>
@@ -11920,12 +11920,98 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>&lt;img src = './img/webavatar.png'&gt;
-<a href="http://computational-communication.com">http://computational-communication.com</a></p>
+<p><img src="img/webavatar.png" alt="title"></p>
+<p><a href="http://computational-communication.com">http://computational-communication.com</a></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src= 'img/webavatar.png'></p>
 
 </div>
 </div>
 </div></section></section><section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">mistune</span>
+<span class="n">mistune</span><span class="o">.</span><span class="n">__version__</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[1]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;0.7.2&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mistune</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1"> &lt;img src=&quot;link&quot; align=&quot;right&quot; width=100&gt;  </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">escape</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[2]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;&lt;p&gt;&lt;img src=&#34;link&#34; align=&#34;right&#34; width=100&gt;&lt;/p&gt;\n&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><h1 id="conda-install-mistune=0.7.2">conda install mistune=0.7.2<a class="anchor-link" href="#conda-install-mistune=0.7.2">&#182;</a></h1>
+</blockquote>
+
+</div>
+</div>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -11958,42 +12044,42 @@ a.anchor-link {
 </thead>
 <tbody>
 <tr>
-<td>2017-05-12 周五</td>
+<td>2018-04-27 周五</td>
+<td style="text-align:center">9:00-12:00</td>
+<td style="text-align:center">13:30-17:30</td>
+<td style="text-align:center">晚上有课，下午延长半个小时</td>
+<td style="text-align:right">6学时</td>
+</tr>
+<tr>
+<td>2018-04-28 周六</td>
+<td style="text-align:center">9:00-12:00</td>
+<td style="text-align:center">15:30-17:30</td>
+<td style="text-align:center">18:30-19:30 授课 19:30-20:30 作业&amp;答疑</td>
+<td style="text-align:right">6学时</td>
+</tr>
+<tr>
+<td>2018-04-29 周天</td>
 <td style="text-align:center">9:00-12:00</td>
 <td style="text-align:center">14:00-17:00</td>
 <td style="text-align:center">作业&amp;答疑</td>
 <td style="text-align:right">6学时</td>
 </tr>
 <tr>
-<td>2017-05-13 周六</td>
+<td>2018-05-04 周五</td>
+<td style="text-align:center">9:00-12:00</td>
+<td style="text-align:center">13:30-17:30</td>
+<td style="text-align:center">--</td>
+<td style="text-align:right">6学时</td>
+</tr>
+<tr>
+<td>2018-05-05 周六</td>
 <td style="text-align:center">9:00-12:00</td>
 <td style="text-align:center">14:00-17:00</td>
 <td style="text-align:center">作业&amp;答疑</td>
 <td style="text-align:right">6学时</td>
 </tr>
 <tr>
-<td>2017-05-14 周天</td>
-<td style="text-align:center">9:00-12:00</td>
-<td style="text-align:center">14:00-17:00</td>
-<td style="text-align:center">作业&amp;答疑</td>
-<td style="text-align:right">6学时</td>
-</tr>
-<tr>
-<td>2017-05-19 周五</td>
-<td style="text-align:center">9:00-12:00</td>
-<td style="text-align:center">14:00-17:00</td>
-<td style="text-align:center">作业&amp;答疑</td>
-<td style="text-align:right">6学时</td>
-</tr>
-<tr>
-<td>2017-05-20 周六</td>
-<td style="text-align:center">9:00-12:00</td>
-<td style="text-align:center">14:00-17:00</td>
-<td style="text-align:center">作业&amp;答疑</td>
-<td style="text-align:right">6学时</td>
-</tr>
-<tr>
-<td>2017-05-21 周天</td>
+<td>2018-05-06 周天</td>
 <td style="text-align:center">9:00-12:00</td>
 <td style="text-align:center">14:00-17:00</td>
 <td style="text-align:center">作业&amp;答疑</td>
@@ -12010,7 +12096,7 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="&#35838;&#31243;&#36164;&#26009;">&#35838;&#31243;&#36164;&#26009;<a class="anchor-link" href="#&#35838;&#31243;&#36164;&#26009;">&#182;</a></h1><ul>
-<li>(包括数据、PPT、可视化、图片、代码) <a href="http://github.com/computational-class/bigdata/">http://github.com/computational-class/bigdata/</a></li>
+<li>(包括数据、PPT、可视化、图片、代码) <a href="http://github.com/computational-class/cjc/">http://github.com/computational-class/cjc/</a></li>
 </ul>
 
 </div>
@@ -12021,13 +12107,13 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="&#25480;&#35838;&#35745;&#21010;">&#25480;&#35838;&#35745;&#21010;<a class="anchor-link" href="#&#25480;&#35838;&#35745;&#21010;">&#182;</a></h1><ul>
-<li>一、计算新闻传播学简介</li>
-<li>二、数据科学的编程工具：大数据(1h)</li>
-<li>三、数据科学的编程工具：Python使用简介（3h）</li>
+<li>一、<a href="01.intro2cjc.ipynb">计算新闻传播学简介</a></li>
+<li>二、<a href="02.bigdata.ipynb">数据科学的编程工具：大数据(1h)</a></li>
+<li>三、<a href="03.python_intro.ipynb">数据科学的编程工具：Python使用简介（3h）</a></li>
 </ul>
 <hr>
 <ul>
-<li>四、数据抓取：抓取两会报告</li>
+<li>四、数据抓取：抓取两会报告、<a href="04.PythonCrawler_beautifulsoup.ipynb">Beautifulsoup</a></li>
 <li>五、数据抓取：抓取天涯论坛帖子</li>
 <li>六、数据清洗：清洗推特数据</li>
 <li>七、数据清洗：清洗占中新闻、清洗天涯论坛帖子</li>
@@ -12114,7 +12200,7 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="&#35838;&#21069;&#20934;&#22791;">&#35838;&#21069;&#20934;&#22791;<a class="anchor-link" href="#&#35838;&#21069;&#20934;&#22791;">&#182;</a></h1><ul>
 <li>注册github账户 <a href="http://github.com">http://github.com</a></li>
-<li>watch本课程repo: <a href="https://github.com/computational-class/bigdata/">https://github.com/computational-class/bigdata/</a></li>
+<li>watch本课程repo: <a href="https://github.com/computational-class/cjc/">https://github.com/computational-class/cjc/</a></li>
 <li>下载并安装github desktop客户端 （建议：非必须内容）： <a href="https://desktop.github.com/">https://desktop.github.com/</a></li>
 </ul>
 
