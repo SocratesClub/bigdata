@@ -61,3 +61,8 @@ http://github.com/computational-class/bigdata/tree/gh-pages/slides/  
 推荐http://nbviewer.jupyter.org/ 更流畅浏览
 
 例如：[数据抓取：抓取47年政府工作报告](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/04.PythonCrawlerGovernmentReport.slides.html#/)
+
+# 相关课程
+
+- Introduction to Python Programming for Data Science 
+https://github.com/computational-class/datascience
