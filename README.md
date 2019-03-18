@@ -12,7 +12,6 @@
 
 # 时间安排
 
-
 大数据挖掘与分析 050302D01
 
 - 36学时，两学分
@@ -64,5 +63,5 @@ http://github.com/computational-class/bigdata/tree/gh-pages/slides/  
 
 # 相关课程
 
-- Introduction to Python Programming for Data Science 
+- Introduction to Python Programming for Data Science
 https://github.com/computational-class/datascience
