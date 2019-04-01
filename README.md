@@ -27,7 +27,7 @@
 - 三、[数据科学的编程工具：Python使用简介（3h）](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/03.python_intro.slides.html#/) [[Graphlab](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/03.graphlab.slides.html#/)、[rpy2](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/03.rpy2.slides.html#/)]
 - 四、数据抓取：[抓取政府工作报告](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/04.PythonCrawlerGovernmentReport.slides.html#/) [[Beautifulsoup](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/04.PythonCrawler_beautifulsoup.slides.html#/)]
 - 五、数据抓取：[抓取天涯论坛帖子](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/05.PythonCrawler_tianya_threads.slides.html#/)
-- 六、数据清洗：[清洗推特数据](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/06.data_cleaning_Tweets.slides.html#/)
+- 六、数据清洗：[清洗推特数据](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/06.data_cleaning_Tweets.slides.html#/)、[自学Pandas](https://github.com/computational-class/datascience/tree/gh-pages/4.datasci/notebooks)
 - 七、数据清洗：[清洗占中新闻、清洗天涯论坛帖子](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/07.data_cleaning_occupy_central_news.slides.html#/)
 - 八、统计初步: [分析天涯论坛的帖子](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/08.analyzing_tianya_thread_network.slides.html#/)
 - 九、机器学习: [分析天涯论坛的帖子](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/09.machine_learning_with_sklearn.slides.html#/)
