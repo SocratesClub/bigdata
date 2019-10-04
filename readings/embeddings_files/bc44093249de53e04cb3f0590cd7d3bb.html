@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)https://towardsdatascience.com/media/bc44093249de53e04cb3f0590cd7d3bb -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Medium</title><meta name="twitter:widgets:csp" content="on"><meta name="robots" content="noindex"><!--<base target="_blank">--><base href="." target="_blank"><style>body {text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: "ff-tisa-web-pro", Georgia, Cambria, "Times New Roman", Times, serif; font-weight: 400; color: #333332; font-size: 18px; line-height: 1.4; margin: 0; background-color: white; overflow: hidden;}iframe {max-width: 100%;}</style></head><body><style>.gist .gist-file { margin-bottom: 0 !important; }.gist { text-rendering: auto; }</style><script src="./f4320ab152f879b0572d8f89d8300ad5.js" charset="utf-8"></script><link rel="stylesheet" href="./gist-embed-4e8330898d16b1b65e7f0856076a5a28.css"><div id="gist92206570" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-keras_book_embedding-py" class="file">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-python ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tbody><tr>
+        <td id="file-keras_book_embedding-py-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-keras_book_embedding-py-LC1" class="blob-code blob-code-inner js-file-line"> <span class="pl-c"><span class="pl-c">#</span> Both inputs are 1-dimensional</span></td>
+      </tr>
+      <tr>
+        <td id="file-keras_book_embedding-py-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-keras_book_embedding-py-LC2" class="blob-code blob-code-inner js-file-line">book <span class="pl-k">=</span> Input(<span class="pl-v">name</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>book<span class="pl-pds">'</span></span>, <span class="pl-v">shape</span> <span class="pl-k">=</span> [<span class="pl-c1">1</span>])</td>
+      </tr>
+      <tr>
+        <td id="file-keras_book_embedding-py-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-keras_book_embedding-py-LC3" class="blob-code blob-code-inner js-file-line">link <span class="pl-k">=</span> Input(<span class="pl-v">name</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>link<span class="pl-pds">'</span></span>, <span class="pl-v">shape</span> <span class="pl-k">=</span> [<span class="pl-c1">1</span>])</td>
+      </tr>
+      <tr>
+        <td id="file-keras_book_embedding-py-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-keras_book_embedding-py-LC4" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-keras_book_embedding-py-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-keras_book_embedding-py-LC5" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> Embedding the book (shape will be (None, 1, 50))</span></td>
+      </tr>
+      <tr>
+        <td id="file-keras_book_embedding-py-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-keras_book_embedding-py-LC6" class="blob-code blob-code-inner js-file-line">book_embedding <span class="pl-k">=</span> Embedding(<span class="pl-v">name</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>book_embedding<span class="pl-pds">'</span></span>,</td>
+      </tr>
+      <tr>
+        <td id="file-keras_book_embedding-py-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-keras_book_embedding-py-LC7" class="blob-code blob-code-inner js-file-line">                           <span class="pl-v">input_dim</span> <span class="pl-k">=</span> <span class="pl-c1">len</span>(book_index),</td>
+      </tr>
+      <tr>
+        <td id="file-keras_book_embedding-py-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-keras_book_embedding-py-LC8" class="blob-code blob-code-inner js-file-line">                           <span class="pl-v">output_dim</span> <span class="pl-k">=</span> embedding_size)(book)</td>
+      </tr>
+      <tr>
+        <td id="file-keras_book_embedding-py-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-keras_book_embedding-py-LC9" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-keras_book_embedding-py-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-keras_book_embedding-py-LC10" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> Embedding the link (shape will be (None, 1, 50))</span></td>
+      </tr>
+      <tr>
+        <td id="file-keras_book_embedding-py-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-keras_book_embedding-py-LC11" class="blob-code blob-code-inner js-file-line">link_embedding <span class="pl-k">=</span> Embedding(<span class="pl-v">name</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>link_embedding<span class="pl-pds">'</span></span>,</td>
+      </tr>
+      <tr>
+        <td id="file-keras_book_embedding-py-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-keras_book_embedding-py-LC12" class="blob-code blob-code-inner js-file-line">                           <span class="pl-v">input_dim</span> <span class="pl-k">=</span> <span class="pl-c1">len</span>(link_index),</td>
+      </tr>
+      <tr>
+        <td id="file-keras_book_embedding-py-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-keras_book_embedding-py-LC13" class="blob-code blob-code-inner js-file-line">                           <span class="pl-v">output_dim</span> <span class="pl-k">=</span> embedding_size)(link)</td>
+      </tr>
+      <tr>
+        <td id="file-keras_book_embedding-py-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-keras_book_embedding-py-LC14" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-keras_book_embedding-py-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-keras_book_embedding-py-LC15" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> Merge the layers with a dot product along the second axis (shape will be (None, 1, 1))</span></td>
+      </tr>
+      <tr>
+        <td id="file-keras_book_embedding-py-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-keras_book_embedding-py-LC16" class="blob-code blob-code-inner js-file-line">merged <span class="pl-k">=</span> Dot(<span class="pl-v">name</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>dot_product<span class="pl-pds">'</span></span>, <span class="pl-v">normalize</span> <span class="pl-k">=</span> <span class="pl-c1">True</span>, <span class="pl-v">axes</span> <span class="pl-k">=</span> <span class="pl-c1">2</span>)([book_embedding, link_embedding])</td>
+      </tr>
+      <tr>
+        <td id="file-keras_book_embedding-py-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-keras_book_embedding-py-LC17" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-keras_book_embedding-py-L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="file-keras_book_embedding-py-LC18" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> Reshape to be a single number (shape will be (None, 1))</span></td>
+      </tr>
+      <tr>
+        <td id="file-keras_book_embedding-py-L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="file-keras_book_embedding-py-LC19" class="blob-code blob-code-inner js-file-line">merged <span class="pl-k">=</span> Reshape(<span class="pl-v">target_shape</span> <span class="pl-k">=</span> [<span class="pl-c1">1</span>])(merged)</td>
+      </tr>
+      <tr>
+        <td id="file-keras_book_embedding-py-L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="file-keras_book_embedding-py-LC20" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-keras_book_embedding-py-L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="file-keras_book_embedding-py-LC21" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> Output neuron</span></td>
+      </tr>
+      <tr>
+        <td id="file-keras_book_embedding-py-L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="file-keras_book_embedding-py-LC22" class="blob-code blob-code-inner js-file-line">out <span class="pl-k">=</span> Dense(<span class="pl-c1">1</span>, <span class="pl-v">activation</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>sigmoid<span class="pl-pds">'</span></span>)(merged)</td>
+      </tr>
+      <tr>
+        <td id="file-keras_book_embedding-py-L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="file-keras_book_embedding-py-LC23" class="blob-code blob-code-inner js-file-line">model <span class="pl-k">=</span> Model(<span class="pl-v">inputs</span> <span class="pl-k">=</span> [book, link], <span class="pl-v">outputs</span> <span class="pl-k">=</span> out)</td>
+      </tr>
+      <tr>
+        <td id="file-keras_book_embedding-py-L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td id="file-keras_book_embedding-py-LC24" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-keras_book_embedding-py-L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td id="file-keras_book_embedding-py-LC25" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> Minimize binary cross entropy</span></td>
+      </tr>
+      <tr>
+        <td id="file-keras_book_embedding-py-L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td id="file-keras_book_embedding-py-LC26" class="blob-code blob-code-inner js-file-line">model.compile(<span class="pl-v">optimizer</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>Adam<span class="pl-pds">'</span></span>, <span class="pl-v">loss</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>binary_crossentropy<span class="pl-pds">'</span></span>, <span class="pl-v">metrics</span> <span class="pl-k">=</span> [<span class="pl-s"><span class="pl-pds">'</span>accuracy<span class="pl-pds">'</span></span>])</td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/WillKoehrsen/f4320ab152f879b0572d8f89d8300ad5/raw/fcf5653a0e89f47a34bf0f87f24984678d8d7b7e/keras_book_embedding.py" style="float:right">view raw</a>
+        <a href="https://gist.github.com/WillKoehrsen/f4320ab152f879b0572d8f89d8300ad5#file-keras_book_embedding-py">keras_book_embedding.py</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+<script>var height = -1; var delayMs = 200;function notifyResize(height) {height = height ? height : document.documentElement.offsetHeight; var resized = false; if (window.donkey && donkey.resize) {donkey.resize(height); resized = true;}if (parent && parent._resizeIframe) {var obj = {iframe: window.frameElement, height: height}; parent._resizeIframe(obj); resized = true;}if (window.location && window.location.hash === "#amp=1" && window.parent && window.parent.postMessage) {window.parent.postMessage({sentinel: "amp", type: "embed-size", height: height}, "*");}if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.resize) {window.webkit.messageHandlers.resize.postMessage(height); resized = true;}return resized;}function maybeResize() {if (document.documentElement.offsetHeight != height && notifyResize()) {height = document.documentElement.offsetHeight;}delayMs = Math.min(delayMs * 2, 1000000); setTimeout(maybeResize, delayMs);}maybeResize();</script></body></html>
