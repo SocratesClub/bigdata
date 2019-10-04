@@ -15,31 +15,49 @@
 大数据挖掘与分析 050302D01
 
 - 36学时，两学分
-- 仙林校区逸夫楼B312
-- 周一3-4节课
+- 南京大学仙林校区新闻传播学院201
+- 周四1-2节课 & 周五 5-6节课
 
 
 
 # 授课计划
 
-- 一、[计算新闻传播学简介](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/01.intro2cjc.slides.html#) [[课程要求](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/0.about2cjc.slides.html#/)、 [常见问题](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/0.common_questions.slides.html#/) 、[Jupyter Notebook使用](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/01.jupyter_notebook.slides.html#/)、 [Slides制作方法](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/01.slides.slides.html#/)]
-- 二、[大数据简介 ](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/02.bigdata.slides.html#/)
-- 三、[数据科学的编程工具：Python使用简介（3h）](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/03.python_intro.slides.html#/) [[Graphlab](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/03.graphlab.slides.html#/)、[rpy2](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/03.rpy2.slides.html#/)]
-- 四、数据抓取：[抓取政府工作报告](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/04.PythonCrawlerGovernmentReport.slides.html#/) [[Beautifulsoup](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/04.PythonCrawler_beautifulsoup.slides.html#/)]
-- 五、数据抓取：[抓取天涯论坛帖子](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/05.PythonCrawler_tianya_threads.slides.html#/)
-- 六、数据清洗：[清洗推特数据](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/06.data_cleaning_Tweets.slides.html#/)、[自学Pandas](https://github.com/computational-class/datascience/tree/gh-pages/4.datasci/notebooks)[第三章]
-- 七、数据清洗：[清洗占中新闻、清洗天涯论坛帖子](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/07.data_cleaning_occupy_central_news.slides.html#/)
-- 八、统计初步: [分析天涯论坛的帖子](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/08.analyzing_tianya_thread_network.slides.html#/)、参考[An Introduction to Statistics with Python](https://github.com/thomas-haslwanter/statsintro_python) || 参考[Data Science from Scratch](https://github.com/computational-class/datascience2018/tree/gh-pages/3.scratch/code-python3)、[中国国家调查数据库](http://www.cnsda.org/)
-- 九、机器学习: [分析天涯论坛的帖子](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/09.machine_learning_with_sklearn.slides.html#/)
-- 十、[文本挖掘简介](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/10.text_minning_gov_report.slides.html#/)
-- 十一、文本挖掘：[基于机器学习的情感分析](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/11.sentiment_classifier.slides.html#/)
-- 十二、文本挖掘：[主题模型](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/12.topic_models.slides.html#/) [[graphlab](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/12.topic-models-with-graphlab.slides.html#/)]
-- 十三、计算传播应用：[推荐系统简介](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/13.recsys_intro.slides.html#/)
-- 十四、计算传播应用：推荐系统实践 [[音乐推荐](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/14.millionsong.slides.html#/)、 [电影推荐](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/14.movielens_recommendation-systems.slides.html#/)、[隐含语义模型](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/14.matrix-factorization-demo.slides.html#/)]
-- 十五、[网络科学理论简介](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/15.network_science_intro.slides.html#/)
-- 十六、[网络科学模型](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/16.network_science_models.slides.html#/)
-- 十七、[网络科学：使用NetworkX分析网络结构](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/17.networkx.slides.html#/)
-- 十八、课程总结 [回帖网络分析](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/18.network_analysis_of_tianya_bbs.slides.html#/)
+- 一、[计算新闻传播学简介](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/01.intro2cjc.ipynb#) [[课程要求](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/0.about2cjc.ipynb#/)、 [常见问题](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/0.common_questions.ipynb#/) 、[Jupyter Notebook使用](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/01.jupyter_notebook.ipynb#/)、 [Slides制作方法](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/01.slides.ipynb#/)]
+- 二、[大数据简介 ](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/02.bigdata.ipynb#/)
+- 三、[数据科学的编程工具：Python使用简介（3h）](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/03.python_intro.ipynb#/) [[Graphlab](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/03.graphlab.ipynb#/)、[rpy2](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/03.rpy2.ipynb#/)]
+- 四、数据抓取：[抓取政府工作报告](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/04.PythonCrawlerGovernmentReport.ipynb#/)、[Beautifulsoup](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/04.PythonCrawler_beautifulsoup.ipynb#/)
+- 五、数据抓取：[抓取音乐评论](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/04.PythonCrawler_netease_music.ipynb#/)
+- 六、数据清洗：[清洗推特数据](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/06.data_cleaning_Tweets.ipynb#/)
+- 七、数据清洗：[清洗占中新闻、清洗天涯论坛帖子](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/07.data_cleaning_occupy_central_news.ipynb#/)
+- 八、统计初步:
+  - [统计思维](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/08.01-statistics_thinking.ipynb)
+  - [线性代数](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/08.02-linear_algebra.ipynb)
+  - [概率](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/08.03-probability.ipynb)
+  - [假设检验](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/08.04-hypothesis_inference.ipynb)
+  - [梯度下降](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/08.05-gradient_descent.ipynb)
+  - [回归分析](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/08.06-regression.ipynb)
+  - [statsmodels](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/08.06-statsmodels.ipynb)
+  - [分析泰坦尼克数据](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/08.07-analyzing_titanic_dataset.ipynb)
+- 九、机器学习
+  - [使用sklearn建立机器学习模型](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/09.01-machine-learning-with-sklearn.ipynb)
+  - [Hyperparameters-and-Model-Validation](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/09.03-Hyperparameters-and-Model-Validation.ipynb)
+  - [Feature-Engineering](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/09.04-Feature-Engineering.ipynb)
+  - [Naive-Bayes](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/09.05-Naive-Bayes.ipynb)
+  - [Linear-Regression](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/09.06-Linear-Regression.ipynb)
+  - [Support-Vector-Machines](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/09.07-Support-Vector-Machines.ipynb)
+  - [Random-Forests](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/09.08-Random-Forests.ipynb)
+  - [machine-learning-summary](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/09.09-machine-learning-summary.ipynb)
+  - [neural_network](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/09.neural_network.ipynb)
+  - [neural_network_advanced](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/09.neural_network_advanced.ipynb)
+- 十、[文本挖掘简介](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/10.text_minning_gov_report.ipynb#/)
+- 十一、文本挖掘：[基于机器学习的情感分析](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/11.sentiment_classifier.ipynb#/)
+- 十二、文本挖掘：[主题模型](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/12.topic_models.ipynb#/) [[graphlab](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/12.topic-models-with-graphlab.ipynb#/)]
+- 十三、计算传播应用：[推荐系统简介](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/13.recsys_intro.ipynb#/)
+- 十四、计算传播应用：推荐系统实践 [[音乐推荐](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/14.millionsong.ipynb#/)、 [电影推荐](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/14.movielens_recommendation-systems.ipynb#/)、[隐含语义模型](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/14.matrix-factorization-demo.ipynb#/)]
+- 十五、[网络科学理论简介](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/15.network_science_intro.ipynb#/)
+- 十六、[网络科学模型](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/16.network_science_models.ipynb#/)
+- 十七、[网络科学：使用NetworkX分析网络结构](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/17.networkx.ipynb#/)
+- 十八、课程总结 [回帖网络分析](https://nbviewer.jupyter.org/format/slides/github/computational-class/bigdata/blob/gh-pages/code/18.network_analysis_of_tianya_bbs.ipynb#/)
 
 
 # 作业信息
@@ -54,12 +72,9 @@ http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/cod
 例如：[数据抓取：抓取47年政府工作报告](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/code/04.PythonCrawlerGovernmentReport.ipynb)
 
 # PPT
-http://nbviewer.jupyter.org/github/computational-class/bigdata/tree/gh-pages/slides/ 或者
-http://github.com/computational-class/bigdata/tree/gh-pages/slides/  
-
-推荐http://nbviewer.jupyter.org/ 更流畅浏览
-
-例如：[数据抓取：抓取47年政府工作报告](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/04.PythonCrawlerGovernmentReport.slides.html#/)
+1. 下载后，打开slides文件夹浏览
+2. 【推荐】通过nbviewer浏览，打开http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/code/ ，选取需要浏览的slides，点击上方的**view as slides**🎁图标
+3. 通过nbviewer浏览，打开 http://nbviewer.jupyter.org/github/computational-class/bigdata/tree/gh-pages/slides/ ，选取需要浏览的slides，例如：[数据抓取：抓取47年政府工作报告](http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/slides/04.PythonCrawlerGovernmentReport.slides.html#/)
 
 # 相关课程
 
