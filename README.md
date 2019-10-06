@@ -75,6 +75,10 @@ http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/cod
 1. 下载后，打开slides文件夹浏览
 2. 【推荐】通过nbviewer浏览，打开http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/code/ ，选取需要浏览的slides，点击上方的**view as slides**🎁图标
 
+# 在线书籍
+
+在线浏览链接见：https://computational-class.github.io/ccbook/
+
 # 相关课程
 
 - Introduction to Python Programming for Data Science
