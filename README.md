@@ -83,3 +83,5 @@ http://nbviewer.jupyter.org/github/computational-class/bigdata/blob/gh-pages/cod
 
 - Introduction to Python Programming for Data Science
 https://github.com/computational-class/datascience
+- Foundations of Data Science https://www.inferentialthinking.com/chapters/intro.html
+- Principles and Techniques of Data Science https://www.textbook.ds100.org/intro
