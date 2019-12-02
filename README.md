@@ -87,5 +87,16 @@ https://github.com/computational-class/datascience
 - Principles and Techniques of Data Science https://www.textbook.ds100.org/intro
 - Mining massive datasets http://www.mmds.org/
 
+# 参考文献
+- 计算传播学
+- Python编程
+- 数据抓取 无
+- 数据清洗 无
+- 社会统计
+- 机器学习
+- 文本挖掘
+- 推荐系统
+- 网络科学
+
 # 更多资料
 - 计算传播学豆列 https://www.douban.com/doulist/36499472/
