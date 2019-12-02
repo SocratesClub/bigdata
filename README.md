@@ -86,3 +86,6 @@ https://github.com/computational-class/datascience
 - Foundations of Data Science https://www.inferentialthinking.com/chapters/intro.html
 - Principles and Techniques of Data Science https://www.textbook.ds100.org/intro
 - Mining massive datasets http://www.mmds.org/
+
+# 更多资料
+- 计算传播学豆列 https://www.douban.com/doulist/36499472/
